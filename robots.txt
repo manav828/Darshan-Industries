@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /industries.html
+
+Sitemap: https://www.darshanindustries.com/sitemap.xml

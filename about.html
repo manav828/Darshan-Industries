@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>About Us | Darshan Industries</title>
+    <link rel="icon" type="image/png" href="logo_icon.png">
+    <meta name="description" content="Learn about Darshan Industries Pvt. Ltd., a trusted global leader in chemical sourcing, import-export operations, and custom chemical trading since 1998.">
+    
+    <link rel="canonical" href="https://www.darshanindustries.com/about.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.darshanindustries.com/about.html">
+    <meta property="og:title" content="About Us | Darshan Industries">
+    <meta property="og:description" content="Learn about Darshan Industries Pvt. Ltd., a trusted global leader in chemical sourcing, import-export operations, and custom chemical trading since 1998.">
+    <meta property="og:image" content="https://www.darshanindustries.com/logo_full.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.darshanindustries.com/about.html">
+    <meta property="twitter:title" content="About Us | Darshan Industries">
+    <meta property="twitter:description" content="Learn about Darshan Industries Pvt. Ltd., a trusted global leader in chemical sourcing, import-export operations, and custom chemical trading since 1998.">
+    <meta property="twitter:image" content="https://www.darshanindustries.com/logo_full.png">
+    
+    <!-- Tailwind CSS & Google Fonts -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Manrope:wght@600;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- Shared Tailwind Config -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#435e8e",
+                        "surface-container-low": "#f4f3f7",
+                        "mesh-blue-tint": "rgba(214, 227, 255, 0.4)",
+                        "surface-bright": "#faf9fd",
+                        "on-secondary": "#ffffff",
+                        "outline": "#747780",
+                        "on-surface-variant": "#434750",
+                        "surface-container-highest": "#e3e2e6",
+                        "on-primary-container": "#738dc0",
+                        "on-primary-fixed": "#001b3f",
+                        "tertiary-container": "#461800",
+                        "inverse-on-surface": "#f1f0f5",
+                        "secondary-fixed": "#d6e3ff",
+                        "on-secondary-fixed-variant": "#1c4681",
+                        "tertiary": "#250900",
+                        "background": "#faf9fd",
+                        "on-background": "#1a1b1f",
+                        "secondary": "#385e9a",
+                        "surface-container": "#eeedf2",
+                        "primary-fixed-dim": "#acc7fd",
+                        "primary": "#00112c",
+                        "inverse-primary": "#acc7fd",
+                        "surface-dim": "#dad9de",
+                        "surface": "#f9f9fe",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#2a4775",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#2f3034",
+                        "secondary-fixed-dim": "#aac7ff",
+                        "outline-variant": "#c4c6d0",
+                        "on-tertiary-fixed-variant": "#6f371a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#001b3e",
+                        "on-secondary-container": "#224b85",
+                        "primary-fixed": "#d7e3ff",
+                        "surface-container-high": "#e9e7ec",
+                        "on-tertiary-fixed": "#351000",
+                        "primary-container": "#002552",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#c47c59",
+                        "glass-border": "rgba(255, 255, 255, 0.6)",
+                        "on-surface": "#1a1b1f",
+                        "secondary-container": "#98bcfe",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "glass-bg": "rgba(255, 255, 255, 0.4)",
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#e3e2e6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "80px",
+                        "container-max": "1440px",
+                        "margin-mobile": "24px",
+                        "gutter": "32px",
+                        "unit": "8px",
+                        "section-padding": "192px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Hanken Grotesk"],
+                        "headline-lg": ["Manrope"],
+                        "display-lg-mobile": ["Manrope"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-xl": ["Manrope"],
+                        "body-md": ["Hanken Grotesk"],
+                        "display-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-lg": ["36px", { "lineHeight": "1.3", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "display-lg-mobile": ["44px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["20px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl": ["56px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-md": ["17px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Shared Style -->
+    <link href="main.css" rel="stylesheet">
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+
+    <!-- Global Header -->
+    <header id="global-header"></header>
+
+    <!-- Main Content -->
+    <main class="pt-[56px]">
+        <!-- Hero Section -->
+        <section class="relative py-12 md:py-16 flex items-center overflow-hidden">
+            <div class="absolute inset-0 bg-surface-bright z-[-2]"></div>
+            <div class="absolute right-0 top-0 w-1/2 h-full opacity-60 z-[-1]" style="background: radial-gradient(circle at 80% 30%, rgba(214, 227, 255, 0.8) 0%, transparent 60%);"></div>
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-gutter items-center relative z-10 w-full">
+                <div class="flex flex-col gap-4 max-w-xl">
+                    <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/60 backdrop-blur-md border border-white/80 rounded-full shadow-sm w-fit">
+                        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                        <span class="font-label-md text-label-md text-primary uppercase tracking-widest text-xs">Welcome to Darshan Industries Pvt. Ltd.</span>
+                    </span>
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold font-headline-xl text-primary leading-tight tracking-tight">
+                        Our Trusted Partner in Chemical Manufacturing & Global Supply Solutions
+                    </h1>
+                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed text-base opacity-90">
+                        Darshan Industries Pvt. Ltd. is a dynamic chemical manufacturing, trading, import, and export company dedicated to delivering high-quality industrial and specialty chemical solutions to customers across India and international markets.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mt-1">
+                        <a href="products.html" class="bg-primary text-on-primary px-7 py-3 rounded-full font-label-md text-label-md flex items-center justify-center gap-2 hover:-translate-y-1 transition-all duration-200 ambient-shadow">
+                            Explore Product Portfolio
+                            <span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:block relative h-[380px] w-full rounded-xl overflow-hidden glass-effect">
+                    <img alt="Cinematic industrial architecture" class="absolute inset-0 w-full h-full object-cover opacity-90" data-alt="A striking cinematic composition of an industrial facility, emphasizing precision and scale." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBq2j0ApRVrJ_wj53ewAakCJJWChQuh7qmDHnqSpBFTkPReJDi0n09HOaTNSeQYdH529jEoBMDrtyKgkzjykwFpLcJrMMsGY0WkuxzoMOyA20Vs77jfNxJ1UQsAgs_ViprFJlD3D8MzytxkhS1lPu4olgDSj0ie7M1rVwsF28CnvCOGLs7NBug-gPBgRhtovO9uApaYvqgn7OXnW_P9kKeXutO0Q1-V5KcvGDQle5lEKbuJ0i3YoB62YXNexbHxnClzzlcCGw7RVEc"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction Split Layout -->
+        <section class="py-section-padding bg-surface">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="grid md:grid-cols-12 gap-gutter items-start">
+                    <div class="md:col-span-5">
+                        <span class="font-label-md text-label-md uppercase tracking-widest text-secondary block mb-4">Who We Are</span>
+                        <h2 class="font-headline-xl text-headline-xl text-primary leading-tight">
+                            Built on Trust, Transparency & Performance.
+                        </h2>
+                    </div>
+                    <div class="md:col-span-6 md:col-start-7 flex flex-col gap-6">
+                        <p class="font-body-lg text-body-lg text-on-surface-variant">
+                            With expertise in both manufacturing and sourcing, we provide reliable products, consistent quality, and efficient supply chain solutions to meet the diverse requirements of various industries. Our integrated business model enables us to offer customized solutions, competitive pricing, and dependable deliveries while maintaining the highest standards of quality and compliance.
+                        </p>
+                        <p class="font-body-md text-body-md text-on-surface-variant opacity-80 text-sm">
+                            At Darshan Industries, we believe that strong partnerships are built on trust, transparency, and performance. Through our growing manufacturing capabilities and extensive supplier network, we are committed to helping our customers achieve operational excellence and sustainable growth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Do Grid -->
+        <section class="py-20 bg-white">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="font-label-md text-label-md uppercase tracking-widest text-secondary block mb-4">Our Services</span>
+                    <h2 class="font-headline-xl text-headline-xl text-primary">What We Do</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Item 1 -->
+                    <div class="glass-card p-8 rounded-lg group hover:-translate-y-1 transition-all duration-300">
+                        <div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-[24px]">science</span>
+                        </div>
+                        <h3 class="font-headline-lg text-[22px] font-bold text-primary mb-3">Industrial Chemical Trading</h3>
+                        <p class="text-on-surface-variant text-body-md text-sm">Strategic marketing and distribution of bulk industrial raw materials and solvents.</p>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="glass-card p-8 rounded-lg group hover:-translate-y-1 transition-all duration-300">
+                        <div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-[24px]">search_insight</span>
+                        </div>
+                        <h3 class="font-headline-lg text-[22px] font-bold text-primary mb-3">Specialty Chemical Sourcing</h3>
+                        <p class="text-on-surface-variant text-body-md text-sm">Custom procurement of hard-to-find, niche specialty chemicals and grades.</p>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="glass-card p-8 rounded-lg group hover:-translate-y-1 transition-all duration-300">
+                        <div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-[24px]">import_export</span>
+                        </div>
+                        <h3 class="font-headline-lg text-[22px] font-bold text-primary mb-3">Import & Export Services</h3>
+                        <p class="text-on-surface-variant text-body-md text-sm">End-to-end management of custom regulations, tariffs, and global shipping pipelines.</p>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="glass-card p-8 rounded-lg group hover:-translate-y-1 transition-all duration-300">
+                        <div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-[24px]">local_shipping</span>
+                        </div>
+                        <h3 class="font-headline-lg text-[22px] font-bold text-primary mb-3">Bulk Chemical Supply</h3>
+                        <p class="text-on-surface-variant text-body-md text-sm">High-tonnage supply chain capabilities for large-scale manufacturing demands.</p>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="glass-card p-8 rounded-lg group hover:-translate-y-1 transition-all duration-300">
+                        <div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-[24px]">inventory_2</span>
+                        </div>
+                        <h3 class="font-headline-lg text-[22px] font-bold text-primary mb-3">Distribution & Logistics Support</h3>
+                        <p class="text-on-surface-variant text-body-md text-sm">Reliable multi-modal shipping, container handling, and timely factory deliveries.</p>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="glass-card p-8 rounded-lg group hover:-translate-y-1 transition-all duration-300">
+                        <div class="w-12 h-12 bg-primary-fixed flex items-center justify-center rounded-xl mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-[24px]">hub</span>
+                        </div>
+                        <h3 class="font-headline-lg text-[22px] font-bold text-primary mb-3">Strategic Procurement Solutions</h3>
+                        <p class="text-on-surface-variant text-body-md text-sm">Consolidated purchasing contracts optimized to leverage cost efficiencies and mitigate risk.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision & Mission Glass Cards -->
+        <section class="py-section-padding relative">
+            <div class="absolute inset-0 radial-glow z-[-1]"></div>
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <!-- Vision -->
+                    <div class="glass-effect rounded-xl p-12 ambient-shadow flex flex-col gap-6 relative overflow-hidden group hover:bg-white/60 transition-all duration-500">
+                        <div class="w-16 h-16 rounded-2xl bg-secondary-fixed flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">visibility</span>
+                        </div>
+                        <h3 class="font-headline-lg text-headline-lg text-primary">Our Vision</h3>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant">
+                            To become a leading global chemical trading company recognized for reliability, integrity, and excellence in supply chain solutions.
+                        </p>
+                    </div>
+                    <!-- Mission -->
+                    <div class="glass-effect rounded-xl p-12 ambient-shadow flex flex-col gap-6 relative overflow-hidden group hover:bg-white/60 transition-all duration-500">
+                        <div class="w-16 h-16 rounded-2xl bg-secondary-fixed flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">track_changes</span>
+                        </div>
+                        <h3 class="font-headline-lg text-headline-lg text-primary">Our Mission</h3>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant">
+                            To provide innovative sourcing solutions and quality chemical products that help our customers achieve operational excellence and sustainable growth.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Core Values -->
+                <div class="glass-effect rounded-xl p-10 ambient-shadow text-center relative overflow-hidden bg-primary/5 border border-primary/10">
+                    <h3 class="font-headline-lg text-[28px] font-bold text-primary mb-6">Our Core Values</h3>
+                    <div class="flex flex-wrap justify-center items-center gap-4 md:gap-8">
+                        <span class="text-xl md:text-2xl font-bold text-primary px-6 py-2 bg-white/80 rounded-full shadow-sm">Integrity</span>
+                        <span class="text-primary/30 text-2xl hidden md:inline">•</span>
+                        <span class="text-xl md:text-2xl font-bold text-primary px-6 py-2 bg-white/80 rounded-full shadow-sm">Reliability</span>
+                        <span class="text-primary/30 text-2xl hidden md:inline">•</span>
+                        <span class="text-xl md:text-2xl font-bold text-primary px-6 py-2 bg-white/80 rounded-full shadow-sm">Commitment</span>
+                        <span class="text-primary/30 text-2xl hidden md:inline">•</span>
+                        <span class="text-xl md:text-2xl font-bold text-primary px-6 py-2 bg-white/80 rounded-full shadow-sm">Quality</span>
+                        <span class="text-primary/30 text-2xl hidden md:inline">•</span>
+                        <span class="text-xl md:text-2xl font-bold text-primary px-6 py-2 bg-white/80 rounded-full shadow-sm">Growth</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Global Operations -->
+        <section class="py-section-padding bg-surface-container-low relative overflow-hidden">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-20">
+                    <span class="font-label-md text-label-md uppercase tracking-widest text-secondary block mb-4">Global Operations</span>
+                    <h2 class="font-headline-xl text-headline-xl text-primary">International Procurement & Supply Network</h2>
+                </div>
+                <div class="relative w-full h-[500px] rounded-xl overflow-hidden glass-effect mb-12 flex items-center justify-center">
+                    <img alt="Abstract map visualization" class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-luminosity" data-alt="A sophisticated abstract visualization of a global map." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBBKrULsfKHWcZinuxyfUUMqHLLXHLKevxGPpUH0nhGHZYZeGmvV5f9BR8zRCqONl1tbGXSVTJNJff5fxfJS44t09YVjOCuafG3gVppW9tVGjhIIG8lRQcpNfaj0R1T8Tw2oJQJxut_xkQATGQB0_TocdMour_bEbRh8A-P8wYXnKE44LCtteVUgWF0ztmm02CGJuIQcwLLkX61KhBaRK72BUQlIX0BnyvYNswgaMaC4BoLkZZ0Y1hytSGOC4yyvpiaFx_AOScWnY"/>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mt-[-100px] relative z-20 px-8">
+                    <div class="glass-effect bg-white/80 p-8 rounded-xl text-center ambient-shadow">
+                        <span class="font-display-lg text-display-lg text-primary block mb-2">10+</span>
+                        <span class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant">Countries Served</span>
+                    </div>
+                    <div class="glass-effect bg-white/80 p-8 rounded-xl text-center ambient-shadow">
+                        <span class="font-display-lg text-display-lg text-primary block mb-2">100+</span>
+                        <span class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant">Products Sourced</span>
+                    </div>
+                    <div class="glass-effect bg-white/80 p-8 rounded-xl text-center ambient-shadow">
+                        <span class="font-display-lg text-display-lg text-primary block mb-2">1000+</span>
+                        <span class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant">Enterprise Clients</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#00112c] py-20 border-t border-white/10 mt-auto text-white" id="global-footer"></footer>
+
+    <!-- Global scripts -->
+    <script src="main.js"></script>
+</body>
+</html>

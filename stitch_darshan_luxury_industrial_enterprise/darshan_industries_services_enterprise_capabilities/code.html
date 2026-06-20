@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | Darshan Industries - Premium Chemical Trading &amp; Global Procurement</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Hanken+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Shared Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-tertiary-container": "#c47c59",
+                "glass-border": "rgba(255, 255, 255, 0.6)",
+                "on-secondary-fixed-variant": "#1c4681",
+                "primary": "#00112c",
+                "on-tertiary-fixed": "#351000",
+                "tertiary": "#250900",
+                "on-error": "#ffffff",
+                "on-secondary-container": "#224b85",
+                "secondary-fixed-dim": "#aac7ff",
+                "inverse-surface": "#2f3034",
+                "on-surface": "#1a1b1f",
+                "background": "#faf9fd",
+                "tertiary-container": "#461800",
+                "surface-container-low": "#f4f3f7",
+                "on-primary": "#ffffff",
+                "surface-variant": "#e3e2e6",
+                "surface-container-lowest": "#ffffff",
+                "secondary-container": "#98bcfe",
+                "secondary": "#385e9a",
+                "error": "#ba1a1a",
+                "secondary-fixed": "#d6e3ff",
+                "surface-container": "#eeedf2",
+                "surface": "#f9f9fe",
+                "mesh-blue-tint": "rgba(214, 227, 255, 0.4)",
+                "glass-bg": "rgba(255, 255, 255, 0.4)",
+                "inverse-primary": "#acc7fd",
+                "on-secondary": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "outline": "#747780",
+                "on-secondary-fixed": "#001b3e",
+                "surface-container-highest": "#e3e2e6",
+                "tertiary-fixed-dim": "#ffb693",
+                "inverse-on-surface": "#f1f0f5",
+                "on-primary-fixed": "#001b3f",
+                "surface-bright": "#faf9fd",
+                "primary-fixed-dim": "#acc7fd",
+                "surface-tint": "#435e8e",
+                "on-surface-variant": "#434750",
+                "on-background": "#1a1b1f",
+                "tertiary-fixed": "#ffdbcc",
+                "on-tertiary-fixed-variant": "#6f371a",
+                "on-primary-container": "#738dc0",
+                "on-primary-fixed-variant": "#2a4775",
+                "surface-dim": "#dad9de",
+                "surface-container-high": "#e9e7ec",
+                "on-error-container": "#93000a",
+                "primary-container": "#002552",
+                "primary-fixed": "#d7e3ff",
+                "outline-variant": "#c4c6d0",
+                "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                "DEFAULT": "1rem",
+                "lg": "2rem",
+                "xl": "3rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "margin-desktop": "80px",
+                "gutter": "32px",
+                "container-max": "1440px",
+                "unit": "8px",
+                "margin-mobile": "24px",
+                "section-padding": "192px"
+            },
+            "fontFamily": {
+                "display-lg-mobile": ["Manrope"],
+                "headline-lg": ["Manrope"],
+                "headline-xl": ["Manrope"],
+                "body-lg": ["Hanken Grotesk"],
+                "label-md": ["Hanken Grotesk"],
+                "display-lg": ["Manrope"],
+                "body-md": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                "display-lg-mobile": ["44px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "headline-lg": ["36px", {"lineHeight": "1.3", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                "headline-xl": ["56px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "body-md": ["17px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 4px 24px -1px rgba(0, 37, 82, 0.05);
+        }
+        .industrial-gradient {
+            background: radial-gradient(circle at top right, rgba(214, 227, 255, 0.4) 0%, rgba(250, 249, 253, 1) 70%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Hanken Grotesk', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3 {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-glass-bg backdrop-blur-xl border-b border-glass-border">
+<div class="flex justify-between items-center px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="font-display-lg text-headline-lg font-bold text-primary tracking-tighter">
+                Darshan Industries
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Expertise</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold border-b-2 border-primary pb-1" href="#">Industries</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">Network</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors" href="#">About</a>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-md text-label-md uppercase tracking-widest hover:scale-105 active:scale-95 transition-all">
+                    Contact Us
+                </button>
+</div>
+</div>
+</nav>
+<main class="mt-[96px]">
+<!-- Page Hero -->
+<section class="relative h-[409px] min-h-[400px] flex items-center overflow-hidden industrial-gradient">
+<!-- Subtle Molecular Pattern Background -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#00112c 1px, transparent 0); background-size: 40px 40px;"></div>
+<div class="max-w-container-max mx-auto px-margin-desktop w-full relative z-10">
+<div class="max-w-3xl">
+<h1 class="font-headline-xl text-headline-xl text-primary-container mb-6">
+                        Chemical Trading, Procurement &amp; <span class="italic font-normal">Global Supply</span> Solutions
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl">
+                        Supporting manufacturers and industrial businesses through reliable sourcing, procurement expertise, import-export operations, and supply chain coordination.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-md text-label-md uppercase tracking-widest hover:shadow-lg transition-all">
+                            Request Consultation
+                        </button>
+<button class="border border-outline text-primary px-10 py-4 rounded-full font-label-md text-label-md uppercase tracking-widest hover:bg-surface-container-low transition-all">
+                            Explore Products
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Overview Grid -->
+<section class="py-section-padding bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<span class="font-label-md text-label-md text-on-primary-container uppercase tracking-widest bg-primary-fixed px-4 py-1 rounded-full">Our Core Expertise</span>
+<h2 class="font-headline-xl text-headline-xl text-primary mt-6">Comprehensive Industrial Services</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<a class="glass-card p-10 rounded-lg group hover:-translate-y-2 transition-all duration-300" href="#chemical-trading">
+<div class="w-16 h-16 bg-primary-fixed flex items-center justify-center rounded-2xl mb-8 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[32px]">science</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Chemical Trading</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Strategic distribution of industrial-grade chemicals with a focus on purity and volume consistency.</p>
+<div class="mt-8 flex items-center text-primary font-bold tracking-wider uppercase text-xs">
+                            View Details <span class="material-symbols-outlined ml-2 group-hover:ml-4 transition-all">arrow_forward</span>
+</div>
+</a>
+<!-- Card 2 -->
+<a class="glass-card p-10 rounded-lg group hover:-translate-y-2 transition-all duration-300" href="#import-services">
+<div class="w-16 h-16 bg-primary-fixed flex items-center justify-center rounded-2xl mb-8 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[32px]">sailing</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Import Services</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Global sourcing and regulatory compliance management for seamless material inflow.</p>
+<div class="mt-8 flex items-center text-primary font-bold tracking-wider uppercase text-xs">
+                            View Details <span class="material-symbols-outlined ml-2 group-hover:ml-4 transition-all">arrow_forward</span>
+</div>
+</a>
+<!-- Card 3 -->
+<a class="glass-card p-10 rounded-lg group hover:-translate-y-2 transition-all duration-300" href="#export-services">
+<div class="w-16 h-16 bg-primary-fixed flex items-center justify-center rounded-2xl mb-8 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[32px]">public</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Export Services</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Connecting local manufacturing prowess with high-demand international markets.</p>
+<div class="mt-8 flex items-center text-primary font-bold tracking-wider uppercase text-xs">
+                            View Details <span class="material-symbols-outlined ml-2 group-hover:ml-4 transition-all">arrow_forward</span>
+</div>
+</a>
+<!-- Card 4 -->
+<a class="glass-card p-10 rounded-lg group hover:-translate-y-2 transition-all duration-300" href="#global-procurement">
+<div class="w-16 h-16 bg-primary-fixed flex items-center justify-center rounded-2xl mb-8 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[32px]">hub</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Global Procurement</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Consolidated purchasing strategies that leverage volume and diverse supplier networks.</p>
+<div class="mt-8 flex items-center text-primary font-bold tracking-wider uppercase text-xs">
+                            View Details <span class="material-symbols-outlined ml-2 group-hover:ml-4 transition-all">arrow_forward</span>
+</div>
+</a>
+<!-- Card 5 -->
+<a class="glass-card p-10 rounded-lg group hover:-translate-y-2 transition-all duration-300" href="#supply-chain">
+<div class="w-16 h-16 bg-primary-fixed flex items-center justify-center rounded-2xl mb-8 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[32px]">inventory_2</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Supply Chain Mgmt</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">End-to-end coordination ensuring just-in-time delivery for complex industrial processes.</p>
+<div class="mt-8 flex items-center text-primary font-bold tracking-wider uppercase text-xs">
+                            View Details <span class="material-symbols-outlined ml-2 group-hover:ml-4 transition-all">arrow_forward</span>
+</div>
+</a>
+<!-- Card 6 -->
+<a class="glass-card p-10 rounded-lg group hover:-translate-y-2 transition-all duration-300" href="#custom-sourcing">
+<div class="w-16 h-16 bg-primary-fixed flex items-center justify-center rounded-2xl mb-8 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[32px]">psychology</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Custom Sourcing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Bespoke technical solutions for hard-to-find materials and specialty chemical grades.</p>
+<div class="mt-8 flex items-center text-primary font-bold tracking-wider uppercase text-xs">
+                            View Details <span class="material-symbols-outlined ml-2 group-hover:ml-4 transition-all">arrow_forward</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Service Detail Sections (Alternating) -->
+<section class="py-section-padding bg-white overflow-hidden" id="chemical-trading">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col lg:flex-row items-center gap-20">
+<div class="lg:w-1/2">
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-widest mb-6 block">01 / Chemical Trading</span>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-8">Strategic Raw Material Distribution</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed">
+                            Darshan Industries acts as a vital bridge between chemical manufacturers and high-demand industrial sectors. We specialize in high-volume trading of solvents, polymers, and specialty additives used in textile, plastic, and pharmaceutical industries.
+                        </p>
+<div class="grid grid-cols-2 gap-8 mb-10">
+<div>
+<h4 class="font-bold text-primary mb-4 uppercase tracking-tighter">Capabilities</h4>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Bulk Volume Handling</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Quality Batch Testing</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Safety Compliance</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-4 uppercase tracking-tighter">Benefits</h4>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">trending_up</span> Price Stability</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">verified</span> Certificated Sourcing</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">schedule</span> Lean Inventory</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 relative">
+<div class="aspect-square rounded-lg overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A high-end cinematic photograph of a modern chemical laboratory with clinical blue lighting and stainless steel surfaces. Researchers in white coats are inspecting translucent liquid samples in glass flasks, reflecting the professional and technical precision of the chemical trading industry. The atmosphere is clean, bright, and focused on quality control." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4nUQ8K9a1al3vIvy406JGdvN207KJujfqjE6csAYN8eyMc0XewGVyr1B5pXKve84ceDNe4ns-DNjmWmYM4ZJrot0UOiYb9XGiOUdIYF8yRt43foSRyHyASpmV2jIDop3TMEmV5wyiybJjgdjuR0zJebpx582inrFTlkP9HzU0XhFrF8stOAJg8TVfkaglL1FKygXrcrkeN19ico015dHc4GNDQofsZRjSVC0Pjoxz8q7KjkLb2PUg48ITk9Igta9XN3m4a5AEMaA"/>
+</div>
+<div class="absolute -bottom-10 -left-10 bg-primary p-8 rounded-lg shadow-xl text-white hidden md:block">
+<p class="text-display-lg font-bold leading-none">500+</p>
+<p class="font-label-md uppercase tracking-widest mt-2">Active Chemical SKU's</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-section-padding bg-surface-container-low overflow-hidden" id="import-services">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col lg:flex-row-reverse items-center gap-20">
+<div class="lg:w-1/2">
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-widest mb-6 block">02 / Import Services</span>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-8">Seamless International Sourcing</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed">
+                            Navigate the complexities of international trade with our expert import management. From custom duties to port logistics, we ensure your materials arrive safely and within regulatory frameworks.
+                        </p>
+<div class="grid grid-cols-2 gap-8 mb-10">
+<div>
+<h4 class="font-bold text-primary mb-4 uppercase tracking-tighter">Capabilities</h4>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Customs Clearance</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Tariffs Optimization</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Port-to-Factory Logistics</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-4 uppercase tracking-tighter">Benefits</h4>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">history</span> Reduced Lead Times</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">gavel</span> 100% Legal Compliance</li>
+<li class="flex items-center gap-3 text-body-md"><span class="material-symbols-outlined text-primary text-sm">savings</span> Lower Landing Costs</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 relative">
+<div class="aspect-square rounded-lg overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A wide-angle aerial shot of a bustling deep-water cargo port at dusk. Massive container ships are docked along the concrete pier, illuminated by powerful golden floodlights that contrast with the deep blue evening sky. Rows of colorful shipping containers are stacked in geometric patterns, symbolizing global trade efficiency and logistics coordination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1um2LgG6AFM2tbpGWjV7oCIZTs5d-bpJv40Cte1H7yO4DielsP1JMv0LyoCYOVhHIk51DE2haNVzzA74JoLpSKpYEWGeP3LGeqcKDnn1fNPFKHrSi_1gl6tKZYXg5L59K5v9J72zxHIuBl7StNYspF9zEd_bznqqxQ9qzaxq4JVTKLnW1LQf8fPlIJdE0Fn55qc-4J4BClqmhyPs-WqfqPQHEuj6-8__Po-UpciCMm-F-E1SWMr7FZBqkE1MC2s_xwApNBNSIv6E"/>
+</div>
+<div class="absolute -bottom-10 -right-10 bg-primary-container p-8 rounded-lg shadow-xl text-white hidden md:block border border-glass-border">
+<p class="text-display-lg font-bold leading-none">40+</p>
+<p class="font-label-md uppercase tracking-widest mt-2">Country Partners</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How We Work - Process -->
+<section class="py-section-padding bg-white">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-24">
+<h2 class="font-headline-xl text-headline-xl text-primary">A Partnership-Driven Process</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4">Transparent steps from initial inquiry to long-term fulfillment.</p>
+</div>
+<div class="relative">
+<!-- Horizontal Line (Desktop) -->
+<div class="hidden lg:block absolute top-[44px] left-0 w-full h-[2px] bg-surface-container-high z-0"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 relative z-10">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-[88px] h-[88px] rounded-full bg-white border-2 border-primary flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-3xl">chat</span>
+</div>
+<h4 class="font-headline-lg text-[22px] text-primary mb-4">Requirement Discussion</h4>
+<p class="text-on-surface-variant text-body-md">Detailed technical analysis of your material needs and budget.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-[88px] h-[88px] rounded-full bg-white border-2 border-primary flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-3xl">search</span>
+</div>
+<h4 class="font-headline-lg text-[22px] text-primary mb-4">Supplier Identification</h4>
+<p class="text-on-surface-variant text-body-md">Sourcing from our verified network of global manufacturers.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-[88px] h-[88px] rounded-full bg-white border-2 border-primary flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+</div>
+<h4 class="font-headline-lg text-[22px] text-primary mb-4">Procurement &amp; Verification</h4>
+<p class="text-on-surface-variant text-body-md">Strict quality auditing and financial settlement protocols.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-[88px] h-[88px] rounded-full bg-white border-2 border-primary flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-3xl">local_shipping</span>
+</div>
+<h4 class="font-headline-lg text-[22px] text-primary mb-4">Logistics Coordination</h4>
+<p class="text-on-surface-variant text-body-md">Multi-modal transport scheduling and documentation.</p>
+</div>
+<!-- Step 5 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-[88px] h-[88px] rounded-full bg-white border-2 border-primary flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-3xl">handshake</span>
+</div>
+<h4 class="font-headline-lg text-[22px] text-primary mb-4">Ongoing Support</h4>
+<p class="text-on-surface-variant text-body-md">Long-term supply management and feedback loops.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-section-padding industrial-gradient">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="mb-16">
+<h2 class="font-headline-xl text-headline-xl text-primary">The Darshan Advantage</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-lg shadow-sm border border-surface-variant hover:border-primary transition-all">
+<span class="material-symbols-outlined text-primary text-3xl mb-6">network_node</span>
+<h4 class="font-headline-lg text-[24px] text-primary mb-3">Reliable Supplier Network</h4>
+<p class="text-on-surface-variant text-body-md">Direct access to Tier-1 manufacturers globally, ensuring priority allocation.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-sm border border-surface-variant hover:border-primary transition-all">
+<span class="material-symbols-outlined text-primary text-3xl mb-6">language</span>
+<h4 class="font-headline-lg text-[24px] text-primary mb-3">Global Expertise</h4>
+<p class="text-on-surface-variant text-body-md">Decades of navigating diverse international markets and regulatory landscapes.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-sm border border-surface-variant hover:border-primary transition-all">
+<span class="material-symbols-outlined text-primary text-3xl mb-6">alarm_on</span>
+<h4 class="font-headline-lg text-[24px] text-primary mb-3">Timely Delivery</h4>
+<p class="text-on-surface-variant text-body-md">Optimized routes and logistics tracking to prevent production downtime.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-sm border border-surface-variant hover:border-primary transition-all">
+<span class="material-symbols-outlined text-primary text-3xl mb-6">verified</span>
+<h4 class="font-headline-lg text-[24px] text-primary mb-3">Quality Focused</h4>
+<p class="text-on-surface-variant text-body-md">Multi-layer quality checks for every batch before dispatch.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-sm border border-surface-variant hover:border-primary transition-all">
+<span class="material-symbols-outlined text-primary text-3xl mb-6">corporate_fare</span>
+<h4 class="font-headline-lg text-[24px] text-primary mb-3">Bulk Supply Support</h4>
+<p class="text-on-surface-variant text-body-md">Handling high-tonnage industrial orders with financial and logistical ease.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-sm border border-surface-variant hover:border-primary transition-all">
+<span class="material-symbols-outlined text-primary text-3xl mb-6">diversity_3</span>
+<h4 class="font-headline-lg text-[24px] text-primary mb-3">Long-Term Partnerships</h4>
+<p class="text-on-surface-variant text-body-md">Strategic collaboration focused on mutual growth rather than one-off trades.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-section-padding bg-white">
+<div class="max-w-3xl mx-auto px-margin-mobile">
+<div class="text-center mb-16">
+<h2 class="font-headline-xl text-headline-xl text-primary">Common Questions</h2>
+</div>
+<div class="space-y-4">
+<details class="group bg-surface-container-lowest p-6 rounded-lg border border-surface-variant open:border-primary transition-all">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<span class="font-headline-lg text-[20px] text-primary">What industries do you primarily serve?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 text-on-surface-variant text-body-md leading-relaxed">
+                            We support a wide range of manufacturers, with core strengths in Pharmaceuticals, Textile Processing, Paints &amp; Coatings, Plastic Manufacturing, and Food Processing industries.
+                        </p>
+</details>
+<details class="group bg-surface-container-lowest p-6 rounded-lg border border-surface-variant open:border-primary transition-all">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<span class="font-headline-lg text-[20px] text-primary">Do you handle international compliance and tariffs?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 text-on-surface-variant text-body-md leading-relaxed">
+                            Yes, our import/export division manages all legal documentation, customs clearance, duty payments, and international trade compliance as part of our turnkey sourcing service.
+                        </p>
+</details>
+<details class="group bg-surface-container-lowest p-6 rounded-lg border border-surface-variant open:border-primary transition-all">
+<summary class="flex justify-between items-center cursor-pointer list-none">
+<span class="font-headline-lg text-[20px] text-primary">What are your typical lead times for bulk orders?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-4 text-on-surface-variant text-body-md leading-relaxed">
+                            Lead times vary by material origin and shipping method. Domestic orders typically take 3-7 days, while international imports range from 4 to 12 weeks depending on port logistics and availability.
+                        </p>
+</details>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 bg-primary text-white text-center relative overflow-hidden">
+<!-- Background Graphic -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute top-0 right-0 w-96 h-96 bg-secondary-container rounded-full blur-[120px]"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary rounded-full blur-[100px]"></div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+<h2 class="font-headline-xl text-headline-xl mb-8">Ready to Optimize Your Procurement?</h2>
+<p class="font-body-lg text-body-lg text-secondary-fixed mb-12 max-w-2xl mx-auto">
+                    Partner with Darshan Industries for reliable, high-quality, and strategically sourced industrial materials on a global scale.
+                </p>
+<div class="flex flex-wrap justify-center gap-6">
+<button class="bg-white text-primary px-10 py-4 rounded-full font-label-md text-label-md uppercase tracking-widest hover:scale-105 active:scale-95 transition-all">
+                        Request Consultation
+                    </button>
+<button class="border border-secondary-fixed text-secondary-fixed px-10 py-4 rounded-full font-label-md text-label-md uppercase tracking-widest hover:bg-white hover:text-primary transition-all">
+                        Contact Procurement Team
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-primary-container">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop py-12 max-w-container-max mx-auto">
+<div class="font-display-lg text-headline-lg font-bold text-on-primary mb-6 md:mb-0">
+                Darshan Industries
+            </div>
+<div class="flex gap-8 mb-6 md:mb-0">
+<a class="font-body-md text-body-md text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="#">Global Locations</a>
+</div>
+<div class="font-body-md text-body-md text-on-primary-fixed-variant">
+                © 2024 Darshan Industries. All rights reserved.
+            </div>
+</div>
+</footer>
+<script>
+        // Simple intersection observer for reveal effects
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.glass-card').forEach(el => {
+            el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+            observer.observe(el);
+        });
+    </script>
+</body></html>

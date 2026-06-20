@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Global Network | Darshan Industries</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary-fixed-dim": "#acc7fd",
+                      "error": "#ba1a1a",
+                      "surface-container-highest": "#e3e2e6",
+                      "primary": "#00112c",
+                      "inverse-primary": "#acc7fd",
+                      "error-container": "#ffdad6",
+                      "primary-fixed": "#d7e3ff",
+                      "surface-dim": "#dad9de",
+                      "surface": "#f9f9fe",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-fixed-variant": "#2a4775",
+                      "secondary-fixed-dim": "#aac7ff",
+                      "tertiary-fixed-dim": "#ffb693",
+                      "tertiary": "#250900",
+                      "on-surface-variant": "#434750",
+                      "tertiary-container": "#461800",
+                      "inverse-surface": "#2f3034",
+                      "surface-container-high": "#e9e7ec",
+                      "on-tertiary-fixed": "#351000",
+                      "glass-bg": "rgba(255, 255, 255, 0.4)",
+                      "secondary-fixed": "#d6e3ff",
+                      "on-error": "#ffffff",
+                      "surface-container-low": "#f4f3f7",
+                      "on-background": "#1a1b1f",
+                      "on-primary": "#ffffff",
+                      "mesh-blue-tint": "rgba(214, 227, 255, 0.4)",
+                      "outline-variant": "#c4c6d0",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-container": "#224b85",
+                      "background": "#faf9fd",
+                      "on-primary-container": "#738dc0",
+                      "inverse-on-surface": "#f1f0f5",
+                      "tertiary-fixed": "#ffdbcc",
+                      "primary-container": "#002552",
+                      "on-tertiary-container": "#c47c59",
+                      "secondary-container": "#98bcfe",
+                      "on-secondary-fixed": "#001b3e",
+                      "on-secondary-fixed-variant": "#1c4681",
+                      "on-primary-fixed": "#001b3f",
+                      "on-secondary": "#ffffff",
+                      "surface-container": "#eeedf2",
+                      "on-surface": "#1a1b1f",
+                      "on-error-container": "#93000a",
+                      "secondary": "#385e9a",
+                      "glass-border": "rgba(255, 255, 255, 0.6)",
+                      "surface-bright": "#faf9fd",
+                      "surface-tint": "#435e8e",
+                      "on-tertiary-fixed-variant": "#6f371a",
+                      "surface-variant": "#e3e2e6",
+                      "outline": "#747780"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "80px",
+                      "gutter": "32px",
+                      "section-padding": "192px",
+                      "margin-mobile": "24px",
+                      "container-max": "1440px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Manrope"
+                      ],
+                      "display-lg-mobile": [
+                              "Manrope"
+                      ],
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-xl": [
+                              "Manrope"
+                      ],
+                      "label-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg": [
+                              "Manrope"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "44px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "17px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-xl": [
+                              "56px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "72px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Continuous Flowing Line Animation */
+        .flow-line {
+            background: linear-gradient(to bottom, transparent, theme('colors.primary-fixed-dim'), theme('colors.primary'), transparent);
+            background-size: 100% 200%;
+            animation: flowDown 3s linear infinite;
+        }
+
+        @keyframes flowDown {
+            0% { background-position: 0% -100%; }
+            100% { background-position: 0% 100%; }
+        }
+
+        /* Subtle glowing orb */
+        .glow-orb {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, theme('colors.mesh-blue-tint') 0%, transparent 70%);
+            border-radius: 50%;
+            filter: blur(60px);
+            z-index: -1;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased overflow-x-hidden relative selection:bg-primary-fixed-dim selection:text-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-glass-bg backdrop-blur-[24px] border-b border-glass-border shadow-[0_4px_30px_rgba(0,37,82,0.05)] transition-transform duration-300">
+<div class="flex justify-between items-center h-[80px] px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Brand Logo -->
+<a class="font-headline-lg text-headline-lg font-bold tracking-tighter text-primary hover:opacity-80 transition-all duration-300" href="#">
+                Darshan Industries
+            </a>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center gap-gutter">
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Expertise</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Industries</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-primary border-b-2 border-primary pb-1 transition-all duration-300" href="#">Network</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-all duration-300" href="#">About</a>
+</div>
+<!-- Trailing Action (Desktop) -->
+<div class="hidden md:flex items-center">
+<button class="font-label-md text-label-md uppercase tracking-widest bg-primary text-on-primary px-6 py-3 rounded-full hover:bg-primary-container hover:translate-y-[-1px] active:scale-98 transition-all duration-300 shadow-[0_4px_12px_rgba(0,37,82,0.1)]">
+                    Get in Touch
+                </button>
+</div>
+<!-- Mobile Menu Icon (Placeholder for interaction) -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<!-- Global Connection Line Container -->
+<div aria-hidden="true" class="absolute inset-0 pointer-events-none z-0 hidden lg:block overflow-hidden">
+<!-- SVG Path for the continuous line -->
+<svg class="absolute top-0 left-0 w-full h-[6000px] opacity-20" fill="none" preserveaspectratio="xMidYMin slice" viewbox="0 0 1440 6000" xmlns="http://www.w3.org/2000/svg">
+<path d="M720,200 C720,500 200,800 200,1200 C200,1600 1200,2000 1200,2400 C1200,2800 720,3200 720,3600 C720,4000 400,4400 400,4800 C400,5200 720,5600 720,6000" id="journey-path" stroke="url(#blue-gradient)" stroke-linecap="round" stroke-width="4"></path>
+<path d="M720,200 C720,500 200,800 200,1200 C200,1600 1200,2000 1200,2400 C1200,2800 720,3200 720,3600 C720,4000 400,4400 400,4800 C400,5200 720,5600 720,6000" filter="blur(8px)" id="journey-path-glow" opacity="0.5" stroke="url(#blue-gradient-glow)" stroke-linecap="round" stroke-width="12"></path>
+<defs>
+<lineargradient gradientunits="userSpaceOnUse" id="blue-gradient" x1="0" x2="0" y1="0" y2="6000">
+<stop stop-color="#acc7fd" stop-opacity="0"></stop>
+<stop offset="0.2" stop-color="#00112c"></stop>
+<stop offset="0.5" stop-color="#385e9a"></stop>
+<stop offset="0.8" stop-color="#00112c"></stop>
+<stop offset="1" stop-color="#acc7fd" stop-opacity="0"></stop>
+</lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="blue-gradient-glow" x1="0" x2="0" y1="0" y2="6000">
+<stop stop-color="#acc7fd" stop-opacity="0"></stop>
+<stop offset="0.5" stop-color="#acc7fd"></stop>
+<stop offset="1" stop-color="#acc7fd" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+</svg>
+<!-- Animated particles traveling along the line (simulated via CSS/JS logic typically, simplified here for structure) -->
+<div class="absolute top-[500px] left-[720px] w-4 h-4 bg-primary-fixed rounded-full shadow-[0_0_20px_4px_rgba(214,227,255,0.8)] -translate-x-1/2 -translate-y-1/2" style="animation: travelDown 10s linear infinite;"></div>
+</div>
+<!-- Main Content Canvas -->
+<main class="relative z-10 w-full overflow-hidden">
+<!-- HERO SECTION -->
+<section class="relative min-h-screen flex items-center pt-[100px] pb-section-padding px-margin-mobile md:px-margin-desktop">
+<div class="absolute inset-0 -z-10">
+<div class="w-full h-full bg-cover bg-center opacity-80 mix-blend-multiply" style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0uihY5KgHyCXzKiVW73gZcuFOju66W68wEcDOQvoSWU-mUpyje9MB4sAp6WWr4_TcUqtR2v6EmtAJtYn_j7vP0c98H2QRrjO96_qdbFdGr2ObgdtCpWojQWGvyWeZxUd4tvQMRN2i6nAonuHUmlVeifQ9sHsxs41Gd8hzz5dWw17Qe7t2njSxi7RDL5Q9h7KWNkSzk5hy703lOEC2MeO-yFvpAvGRaKAmJa3V78CLaHCS7eraw5Gp_SHiDo');"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-surface/50 via-surface/80 to-surface"></div>
+<div class="glow-orb top-1/4 left-1/2 -translate-x-1/2"></div>
+</div>
+<div class="max-w-container-max mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-8 lg:col-start-3 text-center flex flex-col items-center z-10">
+<span class="inline-block px-4 py-1.5 rounded-full border border-glass-border bg-glass-bg backdrop-blur-md font-label-md text-label-md uppercase tracking-widest text-secondary mb-8">The Journey of Supply</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 max-w-4xl">
+                        Global Supply <br/><span class="italic font-light text-primary-container">Network</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-12">
+                        Connecting global suppliers with industrial customers through reliable sourcing, rigorous validation, and seamless procurement.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center w-full">
+<button class="font-label-md text-label-md uppercase tracking-widest bg-primary text-on-primary px-8 py-4 rounded-full hover:bg-primary-container transition-all duration-300 shadow-[0_4px_20px_rgba(0,37,82,0.15)] flex items-center justify-center gap-2 group">
+                            Request Consultation
+                            <span class="material-symbols-outlined transition-transform duration-300 group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-60">
+<span class="font-label-md text-[10px] uppercase tracking-widest text-primary">Discover</span>
+<div class="w-[1px] h-12 bg-outline-variant relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1/2 bg-primary flow-line"></div>
+</div>
+</div>
+</section>
+<!-- SECTION 1: Source -->
+<section class="relative py-section-padding px-margin-mobile md:px-margin-desktop">
+<div class="glow-orb top-1/2 left-[-200px]"></div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5 lg:order-2 space-y-8 relative z-10">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="hub">hub</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary">
+                        Source
+                    </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Trusted supplier relationships across global markets. We identify and partner with leading manufacturers to ensure a consistent, high-quality supply chain for critical industrial materials.
+                    </p>
+</div>
+<div class="lg:col-span-7 lg:order-1 relative">
+<div class="aspect-[4/3] rounded-xl overflow-hidden shadow-[0_20px_60px_rgba(0,37,82,0.08)] bg-white p-2">
+<div class="w-full h-full rounded-lg bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0uh2DLHHK15dJZedzAEw2JAZeD2leZdDaSzbqYS1saf4RP0kUk40LfM6af_SjN7tXmMmSEeQedw8wPT2mY-QbNeNZc-4ZFniNpLn6dzyBv-NjZcilALNGZbAxfFQpGDl41ktoucp6n3sMwAfg0kc-QUfM9dPOijrDS_OijQS9ioai80dQTOUMr-ZarHRK0_W3l1J4avd-nrE8MPHbczEbK2ag2UmSECFwXbNmx9Dy4u_zZJ4r7KAjJmRDg');"></div>
+</div>
+<!-- Decorative element -->
+<div class="absolute -bottom-8 -right-8 w-64 h-64 border border-glass-border bg-glass-bg backdrop-blur-xl rounded-full -z-10 hidden md:block"></div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Procurement -->
+<section class="relative py-section-padding px-margin-mobile md:px-margin-desktop bg-surface-container-low/50">
+<div class="glow-orb bottom-0 right-[-100px]"></div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5 space-y-8 relative z-10">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="account_tree">account_tree</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary">
+                        Procurement
+                    </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Strategic sourcing and supplier coordination. Our dedicated procurement hub centralizes negotiations, compliance, and logistics to streamline your acquisition process.
+                    </p>
+</div>
+<div class="lg:col-span-7 relative">
+<div class="aspect-[16/9] rounded-xl overflow-hidden shadow-[0_20px_60px_rgba(0,37,82,0.08)] bg-white p-2 transform md:translate-x-12">
+<div class="w-full h-full rounded-lg bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0ujqrURo3A1gxvGm0LkaKgb0tULdC85Kjjw2v3Q45KBGFQ1hAiwL2ZM5WfP0VcoeyEhwXvobAgfYXcma3MpujfGmdhv-B4_dFlDH2KpXeZMhdCnK5dx67QadrFQLSoWSa1013QbvlqvRiGPI0KeyM3xu8lBAdQsIW1rrYlo9v8FqVMFsnNZXWOaGCzhNzhWKOZhHI48n06V64QJ9OxOiJgAmwS_hbjuEUCU8z865vfKRXeQs_q6GoZq_Gh4');"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Quality -->
+<section class="relative py-section-padding px-margin-mobile md:px-margin-desktop">
+<div class="glow-orb top-1/3 left-1/2 -translate-x-1/2"></div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5 lg:order-2 space-y-8 relative z-10 md:pl-12">
+<div class="w-12 h-12 rounded-full bg-surface-tint text-on-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="verified_user">verified_user</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary">
+                        Quality
+                    </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Quality-focused validation before movement. Every batch undergoes rigorous inspection within our network, ensuring that only materials meeting exact specifications enter the supply stream.
+                    </p>
+</div>
+<div class="lg:col-span-7 lg:order-1 relative">
+<div class="aspect-[1.79] rounded-xl overflow-hidden shadow-[0_20px_60px_rgba(0,37,82,0.12)]">
+<!-- MANDATORY IMAGE REFERENCE -->
+<img alt="Quality validation chamber" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ujae4pGSJpSVwXywJ08bHcc6RsygPBxYbabbqQ6B3QQEnCiUZsXiND-U4BMi1TjXOvZ2QWRQtK4tEgTEx15tPBtGjk5LhWNC2_EsnmBeLaOiKUgSSTtCOc4w-l2E1_zZ2byohNaxM4p2zQN9_hSe0F78N27oGrlORNmd5bdDPoGXfuiB9jkyi7rxHUQDQXzRS7a-VfRrKiBo9sf10QjISlXsExPmExbcuFfNfSzgPjjYkcxdbdomDm8yqg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: Global Movement -->
+<section class="relative py-section-padding px-margin-mobile md:px-margin-desktop bg-primary text-on-primary overflow-hidden">
+<!-- Dark Mode Aesthetic for this specific section to emphasize glowing lines -->
+<div class="absolute inset-0 opacity-40 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0ugkKaKVGANTDSfp05Spcx4ES4LRFHcEDOfBnJnA5bGZBrR8TpakGqxnIye58oSFXK2xBOZw0PQmNdUoX_DGxE8eejwcpSZZpyWHi18PYbCVdLfBJKOfRgeSjZRmeJvgfJLXlsYa4LfJ8UUf3FFnnQzcahR1-kjjp8jOt63ZNmNR-rVbgmv0j7raWlCQ_jXiuXZ7P4_RZmdT9dItkWqMwKihiJW9ogBv6AjA0dk3v8cZOBflRzPBwasJ4SM'); mix-blend-mode: screen;"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-transparent"></div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center relative z-10">
+<div class="lg:col-span-6 space-y-8">
+<span class="inline-block px-4 py-1.5 rounded-full border border-white/20 bg-white/5 backdrop-blur-md font-label-md text-label-md uppercase tracking-widest text-primary-fixed-dim mb-4">Distribution</span>
+<h2 class="font-headline-xl text-headline-xl text-white">
+                        Global Movement
+                    </h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim max-w-lg">
+                        Coordinated logistics and international distribution. We navigate complex geopolitical and infrastructural landscapes to deliver resources precisely when and where they are needed.
+                    </p>
+<div class="pt-8 border-t border-white/10 flex gap-8">
+<div>
+<div class="font-display-lg-mobile text-display-lg-mobile text-white mb-2">15+</div>
+<div class="font-label-md text-label-md uppercase tracking-widest text-primary-fixed-dim">Global Ports</div>
+</div>
+<div>
+<div class="font-display-lg-mobile text-display-lg-mobile text-white mb-2">24/7</div>
+<div class="font-label-md text-label-md uppercase tracking-widest text-primary-fixed-dim">Tracking</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: Industry Delivery -->
+<section class="relative py-section-padding px-margin-mobile md:px-margin-desktop">
+<div class="glow-orb top-0 right-0"></div>
+<div class="max-w-container-max mx-auto flex flex-col items-center text-center mb-24 relative z-10">
+<h2 class="font-headline-xl text-headline-xl text-primary mb-6">
+                    Industry Delivery
+                </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Supplying essential materials to key industries worldwide, acting as the critical link between raw potential and refined production.
+                </p>
+</div>
+<!-- Bento-style Industry Grid -->
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
+<!-- Industry Tile 1 -->
+<div class="group relative p-8 rounded-2xl bg-white border border-glass-border shadow-sm hover:shadow-[0_20px_40px_rgba(0,37,82,0.08)] hover:bg-primary transition-all duration-500 overflow-hidden min-h-[240px] flex flex-col justify-end">
+<div class="absolute top-8 right-8 w-12 h-12 rounded-xl bg-surface-container-low group-hover:bg-white/10 flex items-center justify-center transition-colors duration-500">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors duration-500" data-icon="science">science</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary group-hover:text-white mb-2 transition-colors duration-500">Pharmaceuticals</h3>
+<div class="w-0 h-[2px] bg-primary-fixed-dim group-hover:w-full transition-all duration-500"></div>
+</div>
+<!-- Industry Tile 2 -->
+<div class="group relative p-8 rounded-2xl bg-white border border-glass-border shadow-sm hover:shadow-[0_20px_40px_rgba(0,37,82,0.08)] hover:bg-primary transition-all duration-500 overflow-hidden min-h-[240px] flex flex-col justify-end">
+<div class="absolute top-8 right-8 w-12 h-12 rounded-xl bg-surface-container-low group-hover:bg-white/10 flex items-center justify-center transition-colors duration-500">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors duration-500" data-icon="eco">eco</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary group-hover:text-white mb-2 transition-colors duration-500">Agrochemicals</h3>
+<div class="w-0 h-[2px] bg-primary-fixed-dim group-hover:w-full transition-all duration-500"></div>
+</div>
+<!-- Industry Tile 3 -->
+<div class="group relative p-8 rounded-2xl bg-white border border-glass-border shadow-sm hover:shadow-[0_20px_40px_rgba(0,37,82,0.08)] hover:bg-primary transition-all duration-500 overflow-hidden min-h-[240px] flex flex-col justify-end">
+<div class="absolute top-8 right-8 w-12 h-12 rounded-xl bg-surface-container-low group-hover:bg-white/10 flex items-center justify-center transition-colors duration-500">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors duration-500" data-icon="format_paint">format_paint</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary group-hover:text-white mb-2 transition-colors duration-500">Paint &amp; Coating</h3>
+<div class="w-0 h-[2px] bg-primary-fixed-dim group-hover:w-full transition-all duration-500"></div>
+</div>
+<!-- Industry Tile 4 (Spans 2 cols on lg) -->
+<div class="group relative p-8 rounded-2xl bg-white border border-glass-border shadow-sm hover:shadow-[0_20px_40px_rgba(0,37,82,0.08)] hover:bg-primary transition-all duration-500 overflow-hidden min-h-[240px] flex flex-col justify-end lg:col-span-2">
+<div class="absolute top-8 right-8 w-12 h-12 rounded-xl bg-surface-container-low group-hover:bg-white/10 flex items-center justify-center transition-colors duration-500">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors duration-500" data-icon="precision_manufacturing">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary group-hover:text-white mb-2 transition-colors duration-500">Manufacturing</h3>
+<div class="w-0 h-[2px] bg-primary-fixed-dim group-hover:w-full transition-all duration-500"></div>
+</div>
+<!-- Industry Tile 5 -->
+<div class="group relative p-8 rounded-2xl bg-white border border-glass-border shadow-sm hover:shadow-[0_20px_40px_rgba(0,37,82,0.08)] hover:bg-primary transition-all duration-500 overflow-hidden min-h-[240px] flex flex-col justify-end">
+<div class="absolute top-8 right-8 w-12 h-12 rounded-xl bg-surface-container-low group-hover:bg-white/10 flex items-center justify-center transition-colors duration-500">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors duration-500" data-icon="styler">styler</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary group-hover:text-white mb-2 transition-colors duration-500">Textile</h3>
+<div class="w-0 h-[2px] bg-primary-fixed-dim group-hover:w-full transition-all duration-500"></div>
+</div>
+</div>
+</section>
+<!-- IMPACT SECTION (Editorial Typography) -->
+<section class="py-section-padding px-margin-mobile md:px-margin-desktop bg-surface-container-low border-y border-outline-variant/30 flex items-center justify-center min-h-[60vh] relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/60 via-surface-container-low to-surface-container-low"></div>
+<div class="relative z-10 max-w-container-max mx-auto text-center space-y-12">
+<div class="flex flex-wrap justify-center items-baseline gap-x-12 gap-y-8">
+<span class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tighter hover:text-secondary transition-colors duration-500 cursor-default">35+ Countries</span>
+<span class="text-outline-variant/50 hidden md:inline-block">/</span>
+<span class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tighter hover:text-secondary transition-colors duration-500 cursor-default">500+ Products</span>
+</div>
+<div class="flex flex-wrap justify-center items-baseline gap-x-12 gap-y-8">
+<span class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tighter hover:text-secondary transition-colors duration-500 cursor-default">1200+ Clients</span>
+<span class="text-outline-variant/50 hidden md:inline-block">/</span>
+<span class="font-headline-xl text-headline-xl text-primary/80 italic font-light cursor-default">Global Procurement Network</span>
+</div>
+</div>
+</section>
+<!-- CTA SECTION -->
+<section class="relative py-[120px] px-margin-mobile md:px-margin-desktop overflow-hidden">
+<div class="glow-orb bottom-0 left-1/2 -translate-x-1/2 !w-[800px] !h-[800px] !bg-primary-fixed-dim/20"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10 p-12 md:p-24 bg-glass-bg backdrop-blur-2xl border border-glass-border rounded-[3rem] shadow-[0_20px_60px_rgba(0,37,82,0.05)]">
+<h2 class="font-headline-xl text-headline-xl text-primary mb-6">
+                    Built on Reliable Global Connections
+                </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto">
+                    Partner with Darshan Industries for premium sourcing, strategic procurement, and seamless industrial supply solutions tailored to your enterprise.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="font-label-md text-label-md uppercase tracking-widest bg-primary text-on-primary px-8 py-4 rounded-full hover:bg-primary-container hover:-translate-y-1 active:scale-95 transition-all duration-300 shadow-[0_4px_20px_rgba(0,37,82,0.15)]">
+                        Request Consultation
+                    </button>
+<button class="font-label-md text-label-md uppercase tracking-widest bg-transparent text-primary border border-primary/20 px-8 py-4 rounded-full hover:bg-primary/5 hover:border-primary hover:-translate-y-1 active:scale-95 transition-all duration-300">
+                        Contact Team
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-section-padding bg-surface border-t border-outline-variant pt-margin-desktop pb-margin-mobile px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-container-max mx-auto mb-12">
+<div>
+<span class="font-headline-lg text-headline-lg font-bold text-primary block mb-6">Darshan Industries</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                    Precision Engineering &amp; Global Supply. Elevating industrial procurement standards worldwide.
+                 </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-2">Network Links</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all duration-200" href="#">Sustainability</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all duration-200" href="#">Compliance</a>
+<a class="font-body-md text-body-md text-primary font-semibold hover:underline transition-all duration-200" href="#">Global Network</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all duration-200" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-2">Contact</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Global HQ</p>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="mailto:contact@darshanindustries.com">contact@darshanindustries.com</a>
+</div>
+</div>
+<div class="border-t border-outline-variant/30 pt-8 max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-body-md text-on-surface-variant/80">
+                © 2024 Darshan Industries. Precision Engineering &amp; Global Supply.
+            </p>
+<div class="flex gap-4">
+<a aria-label="LinkedIn" class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="language">language</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>

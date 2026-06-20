@@ -1,0 +1,134 @@
+/* Global stylesheet for Darshan Industries Website */
+
+/* Material Icon font adjustments */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+}
+.material-symbols-outlined.fill-icon {
+    font-variation-settings: 'FILL' 1;
+}
+
+/* Glassmorphism effects */
+.glass-card, .glass-panel, .glass-effect {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px 0 rgba(0, 37, 82, 0.04);
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.85);
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 20px 40px rgba(0, 37, 82, 0.08);
+}
+
+/* Tonal Shadow Utilities */
+.ambient-shadow {
+    box-shadow: 0 20px 40px rgba(0, 17, 44, 0.04);
+}
+
+/* Color & Text Gradients */
+.text-gradient {
+    background: linear-gradient(135deg, #00112c 0%, #0b3b75 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Background Gradients */
+.radial-glow {
+    background: radial-gradient(circle at center, rgba(214, 227, 255, 0.4) 0%, transparent 70%);
+}
+
+.mesh-bg {
+    background-color: #faf9fd;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(214, 227, 255, 0.4) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(172, 199, 253, 0.2) 0px, transparent 50%);
+}
+
+.industrial-gradient {
+    background: radial-gradient(circle at top right, rgba(214, 227, 255, 0.4) 0%, rgba(250, 249, 253, 1) 70%);
+}
+
+.hero-gradient {
+    background: linear-gradient(to bottom, rgba(0, 17, 44, 0.85), rgba(0, 17, 44, 0.4)), url('https://images.unsplash.com/photo-1518623001395-125242310d0c?q=80&w=2000&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+}
+
+.atmospheric-gradient {
+    background: radial-gradient(circle at 50% -20%, #ffffff 0%, #faf9fd 70%);
+}
+
+/* Animations & Transitions */
+.carousel-slide {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+.carousel-slide.active {
+    opacity: 0.9;
+}
+
+/* Continuous Flowing Line Animation (Supply Chain Journey) */
+.flow-line {
+    background: linear-gradient(to bottom, transparent, rgba(172, 199, 253, 0.6), #00112c, transparent);
+    background-size: 100% 200%;
+    animation: flowDown 3s linear infinite;
+}
+
+@keyframes flowDown {
+    0% { background-position: 0% -100%; }
+    100% { background-position: 0% 100%; }
+}
+
+@keyframes travelDown {
+    0% {
+        top: 200px;
+        left: 720px;
+    }
+    20% {
+        top: 500px;
+        left: 720px;
+    }
+    40% {
+        top: 800px;
+        left: 200px;
+    }
+    60% {
+        top: 1600px;
+        left: 200px;
+    }
+    80% {
+        top: 2400px;
+        left: 1200px;
+    }
+    100% {
+        top: 3200px;
+        left: 720px;
+    }
+}
+
+/* Unified Modal styling */
+.modal-overlay {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease, backdrop-filter 0.4s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-container {
+    transform: translateY(40px) scale(0.95);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-overlay.active .modal-container {
+    transform: translateY(0) scale(1);
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Scientific Immersive - Quality &amp; Compliance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#2a4775",
+                        "secondary-container": "#98bcfe",
+                        "secondary-fixed-dim": "#aac7ff",
+                        "surface-container-high": "#e9e7ec",
+                        "on-primary-container": "#738dc0",
+                        "on-surface": "#1a1b1f",
+                        "on-primary-fixed": "#001b3f",
+                        "surface-tint": "#435e8e",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#002552",
+                        "error": "#ba1a1a",
+                        "background": "#faf9fd",
+                        "surface": "#f9f9fe",
+                        "on-surface-variant": "#434750",
+                        "on-background": "#1a1b1f",
+                        "surface-variant": "#e3e2e6",
+                        "surface-container-highest": "#e3e2e6",
+                        "primary-fixed-dim": "#acc7fd",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#461800",
+                        "outline-variant": "#c4c6d0",
+                        "glass-bg": "rgba(255, 255, 255, 0.4)",
+                        "primary-fixed": "#d7e3ff",
+                        "on-tertiary-container": "#c47c59",
+                        "surface-dim": "#dad9de",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#faf9fd",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#250900",
+                        "on-tertiary-fixed": "#351000",
+                        "tertiary-fixed": "#ffdbcc",
+                        "secondary-fixed": "#d6e3ff",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "surface-container": "#eeedf2",
+                        "secondary": "#385e9a",
+                        "inverse-primary": "#acc7fd",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#f4f3f7",
+                        "inverse-on-surface": "#f1f0f5",
+                        "primary": "#00112c",
+                        "on-secondary-fixed": "#001b3e",
+                        "on-secondary-container": "#224b85",
+                        "on-secondary-fixed-variant": "#1c4681",
+                        "outline": "#747780",
+                        "mesh-blue-tint": "rgba(214, 227, 255, 0.4)",
+                        "inverse-surface": "#2f3034",
+                        "glass-border": "rgba(255, 255, 255, 0.6)",
+                        "on-tertiary-fixed-variant": "#6f371a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-mobile": "24px",
+                        "section-padding": "192px",
+                        "margin-desktop": "80px",
+                        "container-max": "1440px",
+                        "gutter": "32px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Hanken Grotesk"],
+                        "display-lg-mobile": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-xl": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "display-lg-mobile": ["44px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["36px", { "lineHeight": "1.3", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["17px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["20px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl": ["56px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 8px 32px 0 rgba(0, 37, 82, 0.05);
+        }
+        .atmospheric-gradient {
+            background: radial-gradient(circle at 50% -20%, var(--tw-colors-surface-container-lowest) 0%, var(--tw-colors-background) 70%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md selection:bg-primary-container selection:text-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-glass-bg backdrop-blur-md border-b border-glass-border shadow-sm transition-all duration-300" id="global-nav">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
+<!-- Brand -->
+<a class="font-headline-lg text-headline-lg font-bold tracking-tight text-primary flex items-center gap-2" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">hexagon</span>
+                Darshan Industries
+            </a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex items-center space-x-8">
+<!-- Active Item -->
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary pb-1" href="#">
+                    Expertise
+                </a>
+<!-- Inactive Items -->
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 hover:bg-primary/5 px-3 py-2 rounded-full" href="#">Logistics</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 hover:bg-primary/5 px-3 py-2 rounded-full" href="#">Solutions</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 hover:bg-primary/5 px-3 py-2 rounded-full" href="#">Corporate</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 hover:bg-primary/5 px-3 py-2 rounded-full" href="#">Contact</a>
+</div>
+<!-- Trailing Action -->
+<div class="hidden md:block">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2 group">
+                    Request Quote
+                    <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="relative min-h-[80vh] flex flex-col justify-center items-center px-margin-mobile md:px-margin-desktop atmospheric-gradient overflow-hidden">
+<!-- Decorative atmospheric elements -->
+<div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-secondary-container/20 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-primary-fixed/20 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="relative z-10 max-w-4xl mx-auto text-center space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-outline-variant bg-surface-container-lowest shadow-sm mb-6">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase">The Scientific Immersive</span>
+</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tight">
+                    Built on Quality.<br/>
+<span class="text-surface-tint italic pr-2">Backed by Reliability.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+                    A multi-tiered framework designed for enterprise-level procurement, ensuring uncompromised precision and technical sophistication at every stage of the global supply chain.
+                </p>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-60">
+<span class="font-label-md text-label-md text-primary uppercase text-[10px]">Explore Framework</span>
+<span class="material-symbols-outlined animate-bounce">arrow_downward</span>
+</div>
+</section>
+<!-- Trust Framework Core (Image 54 Metaphor) -->
+<section class="py-section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8 order-2 lg:order-1">
+<h2 class="font-headline-xl text-headline-xl text-primary leading-tight">
+                        The Multi-Layered<br/>Validation Protocol
+                    </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Our quality assurance operates entirely on transparent, verifiable layers. Just as light passes through refined optics, our materials undergo rigorous, distinct phases of validation to ensure absolute clarity and consistency.
+                    </p>
+<ul class="space-y-6 pt-4">
+<li class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">layers</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg text-primary text-[24px]">Layer 1: Provenance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Tracing raw materials to certified global origins.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">science</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg text-primary text-[24px]">Layer 2: Chemical Synthesis</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Laboratory-grade analysis of structural integrity.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="order-1 lg:order-2 relative group">
+<div class="absolute inset-0 bg-primary-fixed blur-3xl opacity-20 group-hover:opacity-40 transition-opacity duration-700"></div>
+<!-- Exactly as requested, using IMAGE_54 directly without generation modifications -->
+<img alt="Floating Glass Layers representing Trust Framework" class="relative z-10 w-full h-auto object-cover rounded-xl glass-panel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQiJsBKzIwaG4KiHD6cqMTUGzMVJnUIj0GGMngMr9F_pCilCPfWqCyKe7V9zroBVKTDpkZtjBZdyngIzrdSgOPelB4tOK5dV4gwJlLn9yKqhu0u9JGtDAY7i5SRyPa28UtUTwKi5JLmUIBdllR0isBkmUlSTpMTUnzMGzkDEBQyOX-i9jLFYwj7SuPC4W6xk4uIL1KI_bBPC9S1t5XD5dtqlM_09jaWeRwlpXQDXDEIPWbZjv3LWHU-K3YrtdJzOB9hEhwKT9y2VE"/>
+</div>
+</div>
+</section>
+<!-- Detailed Chapters (Bento Grid) -->
+<section class="py-section-padding bg-surface-container-low px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16 space-y-4">
+<h2 class="font-headline-xl text-headline-xl text-primary">Clinical Execution</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto">Precision methodologies applied across four core pillars of our enterprise operation.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Chapter 1 -->
+<div class="glass-panel rounded-[2rem] p-10 hover:-translate-y-2 transition-transform duration-500 flex flex-col justify-between h-[400px] relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary-fixed opacity-20 blur-3xl rounded-full -translate-y-1/2 translate-x-1/2"></div>
+<div class="relative z-10 space-y-4">
+<span class="material-symbols-outlined text-[40px] text-surface-tint" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<h3 class="font-headline-lg text-headline-lg text-primary">Supplier Verification</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">We partner exclusively with entities that meet stringent ISO and cGMP requirements. Every supplier is continuously audited against global industrial standards.</p>
+</div>
+</div>
+<!-- Chapter 2 -->
+<div class="glass-panel rounded-[2rem] p-10 hover:-translate-y-2 transition-transform duration-500 flex flex-col justify-between h-[400px] relative overflow-hidden group">
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-primary-container opacity-10 blur-3xl rounded-full translate-y-1/2 -translate-x-1/2"></div>
+<div class="relative z-10 space-y-4">
+<span class="material-symbols-outlined text-[40px] text-surface-tint" style="font-variation-settings: 'FILL' 1;">troubleshoot</span>
+<h3 class="font-headline-lg text-headline-lg text-primary">Quality Review</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Independent laboratory testing confirms specifications. We utilize spectroscopy and chromatography to ensure chemical purity before any product enters inventory.</p>
+</div>
+</div>
+<!-- Chapter 3 -->
+<div class="glass-panel rounded-[2rem] p-10 hover:-translate-y-2 transition-transform duration-500 flex flex-col justify-between h-[400px] relative overflow-hidden group">
+<div class="absolute top-1/2 right-1/2 w-48 h-48 bg-outline-variant opacity-20 blur-2xl rounded-full"></div>
+<div class="relative z-10 space-y-4">
+<span class="material-symbols-outlined text-[40px] text-surface-tint" style="font-variation-settings: 'FILL' 1;">description</span>
+<h3 class="font-headline-lg text-headline-lg text-primary">Digital Documentation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Immutable records. Every batch is accompanied by comprehensive COAs, MSDS, and tracking data accessible securely via our enterprise portal.</p>
+</div>
+</div>
+<!-- Chapter 4 -->
+<div class="glass-panel rounded-[2rem] p-10 hover:-translate-y-2 transition-transform duration-500 flex flex-col justify-between h-[400px] relative overflow-hidden group bg-primary">
+<div class="relative z-10 space-y-4">
+<span class="material-symbols-outlined text-[40px] text-primary-fixed" style="font-variation-settings: 'FILL' 1;">all_inclusive</span>
+<h3 class="font-headline-lg text-headline-lg text-surface-container-lowest">Supply Consistency</h3>
+<p class="font-body-md text-body-md text-surface-variant">Strategic stockpiling and predictive logistics models ensure that industrial workflows remain uninterrupted, regardless of global market volatility.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Monumental Typography / Statement Section -->
+<section class="py-[240px] px-margin-mobile md:px-margin-desktop bg-surface-container-lowest flex items-center justify-center border-t border-outline-variant/30">
+<div class="max-w-5xl mx-auto text-center space-y-8">
+<span class="material-symbols-outlined text-[48px] text-surface-tint/40 mb-8 block">emergency</span>
+<h2 class="font-headline-xl text-headline-xl md:text-[84px] md:leading-[1.1] text-primary tracking-tight font-bold">
+                    In industrial science, <br/>
+<span class="text-surface-tint italic font-normal">trust is not given.</span> <br/>
+                    It is mathematically proven.
+                </h2>
+<div class="w-24 h-1 bg-primary mx-auto mt-12 rounded-full"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-padding bg-surface-container-lowest border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-1 space-y-6">
+<div class="font-headline-lg text-headline-lg font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">hexagon</span>
+                    Darshan Industries
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                    Advancing industrial capabilities through precise chemical solutions and uncompromising global logistics.
+                </p>
+</div>
+<!-- Navigation Links -->
+<div class="col-span-1 md:col-span-2 grid grid-cols-2 gap-8">
+<div class="flex flex-col space-y-4 opacity-80 hover:opacity-100 transition-opacity">
+<a class="font-body-md text-body-md text-primary font-semibold hover:translate-x-1 transition-transform duration-200" href="#">Expertise</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform duration-200" href="#">Global Logistics</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform duration-200" href="#">Chemical Solutions</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform duration-200" href="#">Corporate</a>
+</div>
+<div class="flex flex-col space-y-4 opacity-80 hover:opacity-100 transition-opacity">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform duration-200" href="#">Sustainability</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform duration-200" href="#">Quality Assurance</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform duration-200" href="#">Careers</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-transform duration-200" href="#">Privacy Policy</a>
+</div>
+</div>
+<!-- Copyright -->
+<div class="col-span-1 flex flex-col justify-end text-right">
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+                    © 2024 Darshan Industries Pvt. Ltd. All rights reserved.
+                </p>
+</div>
+</div>
+</footer>
+<script>
+        // Simple script to handle nav background opacity on scroll for a more premium feel
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('global-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-glass-bg');
+                nav.classList.remove('bg-transparent');
+            } else {
+                nav.classList.add('bg-transparent');
+                nav.classList.remove('bg-glass-bg');
+            }
+        });
+    </script>
+</body></html>

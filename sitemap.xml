@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.darshanindustries.com/index.html</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://www.darshanindustries.com/products.html</loc>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.darshanindustries.com/services.html</loc>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.darshanindustries.com/supply-chain.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.darshanindustries.com/quality.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.darshanindustries.com/about.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.darshanindustries.com/contact.html</loc>
+    <priority>0.90</priority>
+  </url>
+</urlset>

@@ -1,0 +1,27 @@
+# Darshan Industries Pvt. Ltd.
+
+B2B chemical trading, manufacturing, import-export, global supply chain network website.
+
+## Tech Stack
+- HTML5, CSS (main.css with custom glassmorphism & gradients), Tailwind CSS (loaded via CDN, container queries, custom theme colors).
+- JavaScript (main.js for dynamic header/footer template injection and UI interactions).
+
+## File Registry
+- /index.html: Homepage. Features hero slider, specialty portfolio overview, bento grid of empowered industries.
+- /about.html: Corporate profile, team mission, core values.
+- /products.html: Searchable & filterable B2B chemical product catalog (Pharma intermediates, phosphorus derivatives, solvents, acids).
+- /services.html: Sourcing capabilities & chemical manufacturing details (PCl3, POCl3, PCl5, P2O5, TPP derivatives).
+- /supply-chain.html: Logistics, global validation protocols, network tiles.
+- /quality.html: Quality control & cGMP compliance frameworks.
+- /contact.html: Office coordinates (Vadodara), query form with product quantity field, dynamic map iframe, premium deep blue gradient hero banner.
+- /main.js: Site-wide injections: injectHeader(), injectMobileMenu() with "Chat with Us" actions, injectFooter(), highlightActiveLink(), modal toggles, animations.
+- /main.css: Custom glassmorphism cards, mesh-bg, atmospheric-gradient, transition keyframes.
+- /robots.txt: Crawling configuration pointing to the sitemap and excluding industries.html.
+- /sitemap.xml: Lists the 7 active HTML pages.
+
+## Custom Modality Rules
+- Hidden "Industries" Page: "Industries" navigation links are removed from all headers/footers/menus. Hrefs on index/supply-chain grids are set to "#".
+- Header Action Buttons: "Chat with Us" WhatsApp button (+91 63515 83442) and "Request Quote" modal trigger.
+- Footer Social Links: Limited to custom LinkedIn, X, and Instagram profile URLs only.
+- SEO & Keywords: Optimized for search queries: "chemical supplier", "chemical distributor", and specific product lists (PCl3, POCl3, PCl5, P2O5, TPP).
+- Structured Schemas: Organization JSON-LD (index.html), ItemList JSON-LD (products.html), LocalBusiness JSON-LD (contact.html).
