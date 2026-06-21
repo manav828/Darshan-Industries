@@ -231,26 +231,26 @@
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div class="space-y-2">
                                     <label class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Full Name *</label>
-                                    <input required class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="John Doe" type="text">
+                                    <input name="name" required class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="John Doe" type="text">
                                 </div>
                                 <div class="space-y-2">
                                     <label class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Company Name *</label>
-                                    <input required class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="Enterprise Inc." type="text">
+                                    <input name="company" required class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="Enterprise Inc." type="text">
                                 </div>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div class="space-y-2">
                                     <label class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Email Address *</label>
-                                    <input required class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="john@enterprise.com" type="email">
+                                    <input name="email" required class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="john@enterprise.com" type="email">
                                 </div>
                                 <div class="space-y-2">
                                     <label class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Phone Number</label>
-                                    <input class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="+1 (555) 000-0000" type="tel">
+                                    <input name="phone" class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="+1 (555) 000-0000" type="tel">
                                 </div>
                             </div>
                             <div class="space-y-2">
                                 <label class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Inquiry Type *</label>
-                                <select id="contact-inquiry-type" required class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-on-surface text-sm">
+                                <select name="inquiry_type" id="contact-inquiry-type" required class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-on-surface text-sm">
                                     <option>Product Inquiry (Bulk Supply)</option>
                                     <option>Strategic Partnership</option>
                                     <option>Logistics & Compliance</option>
@@ -263,16 +263,16 @@
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div class="space-y-2">
                                     <label class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Specific Product (Optional)</label>
-                                    <input id="contact-specific-product" class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="e.g., Acetone, Morpholine" type="text">
+                                    <input name="specific_product" id="contact-specific-product" class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="e.g., Acetone, Morpholine" type="text">
                                 </div>
                                 <div class="space-y-2">
                                     <label class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Quantity (Optional)</label>
-                                    <input id="contact-quantity" class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="e.g., 500 kg, 10 MT" type="text">
+                                    <input name="quantity" id="contact-quantity" class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="e.g., 500 kg, 10 MT" type="text">
                                 </div>
                             </div>
                             <div class="space-y-2">
                                 <label class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Message Details *</label>
-                                <textarea required class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors resize-none text-sm" placeholder="Please specify volume requirements, technical specifications, or destination port..." rows="4"></textarea>
+                                <textarea name="message" required class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors resize-none text-sm" placeholder="Please specify volume requirements, technical specifications, or destination port..." rows="4"></textarea>
                             </div>
                             
                             <div id="form-result-message" class="hidden py-3 text-center text-sm font-semibold rounded-lg"></div>
@@ -358,18 +358,47 @@
             submitBtn.disabled = true;
             submitBtn.textContent = 'SUBMITTING...';
             
-            setTimeout(() => {
-                form.reset();
+            const formData = new FormData(form);
+            const payload = Object.fromEntries(formData);
+
+            fetch('/api/submit-form', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(async (response) => {
+                if (response.status === 404) {
+                    throw new Error('Endpoint not found (404)');
+                }
+                const data = await response.json();
+                if (response.ok && data.success) {
+                    form.reset();
+                    resultMsg.className = "py-3 text-center text-sm font-semibold rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200 block";
+                    resultMsg.textContent = "Thank you! Your inquiry has been submitted. Our technical sourcing desk will reach out shortly.";
+                } else {
+                    resultMsg.className = "py-3 text-center text-sm font-semibold rounded-lg bg-red-50 text-red-700 border border-red-200 block";
+                    resultMsg.textContent = data.message || "Failed to submit inquiry. Please try again.";
+                }
+            })
+            .catch((error) => {
+                console.warn('Backend API not detected. Falling back to Demo Mode Simulation.', error);
+                // Run Demo simulation fallback
+                setTimeout(() => {
+                    form.reset();
+                    resultMsg.className = "py-3 text-center text-sm font-semibold rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200 block";
+                    resultMsg.textContent = "[Demo Mode] Thank you! Your inquiry has been logged. Our technical sourcing desk will reach out shortly.";
+                }, 1200);
+            })
+            .then(() => {
                 submitBtn.disabled = false;
                 submitBtn.textContent = 'SUBMIT INQUIRY';
-                
-                resultMsg.className = "py-3 text-center text-sm font-semibold rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200 block";
-                resultMsg.textContent = "Thank you! Your inquiry has been logged. Our technical sourcing desk will reach out shortly.";
-                
+                resultMsg.classList.remove('hidden');
                 setTimeout(() => {
                     resultMsg.classList.add('hidden');
                 }, 8000);
-            }, 1200);
+            });
         });
     </script>
 </body>

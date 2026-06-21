@@ -1,0 +1,8 @@
+{
+  "name": "darshan-industries",
+  "version": "1.0.0",
+  "description": "Darshan Industries Corporate Website",
+  "dependencies": {
+    "nodemailer": "^6.9.13"
+  }
+}

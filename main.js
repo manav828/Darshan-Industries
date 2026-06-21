@@ -56,11 +56,12 @@ function injectHeader() {
         <!-- Center: Links (Desktop) -->
         <div id="global-nav" class="hidden lg:flex items-center gap-8">
             <a class="font-body-md text-sm text-[#434750] hover:text-[#00112c] transition-colors" href="index.html">Home</a>
+            <a class="font-body-md text-sm text-[#434750] hover:text-[#00112c] transition-colors" href="about.html">About</a>
             <a class="font-body-md text-sm text-[#434750] hover:text-[#00112c] transition-colors" href="products.html">Products</a>
             <a class="font-body-md text-sm text-[#434750] hover:text-[#00112c] transition-colors" href="services.html">Services</a>
+            <a class="font-body-md text-sm text-[#434750] hover:text-[#00112c] transition-colors" href="industries.html">Industries</a>
             <a class="font-body-md text-sm text-[#434750] hover:text-[#00112c] transition-colors" href="supply-chain.html">Network</a>
             <a class="font-body-md text-sm text-[#434750] hover:text-[#00112c] transition-colors" href="quality.html">Quality</a>
-            <a class="font-body-md text-sm text-[#434750] hover:text-[#00112c] transition-colors" href="about.html">About</a>
             <a class="font-body-md text-sm text-[#434750] hover:text-[#00112c] transition-colors" href="contact.html">Contact</a>
         </div>
 
@@ -69,7 +70,7 @@ function injectHeader() {
             <!-- Chat with Us -->
             <a href="https://wa.me/916351583442" target="_blank" class="hidden md:flex items-center gap-2 border border-[#25D366] text-[#25d366] hover:bg-[#25d366] hover:text-white px-4 py-1.5 rounded-full font-label-md text-xs font-semibold uppercase tracking-wider transition-all duration-300">
                 <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.729-1.448L0 24zm6.59-4.846c1.666.988 3.311 1.485 5.35 1.486 5.568 0 10.1-4.52 10.104-10.082.002-2.694-1.043-5.228-2.946-7.133C17.202 1.52 14.685.474 12.002.474c-5.572 0-10.105 4.52-10.109 10.083-.002 2.057.537 4.061 1.558 5.82L2.43 21.6l5.217-1.368zM17.486 14.4c-.3-.15-1.782-.88-2.05-.98-.268-.1-.463-.15-.658.15-.195.3-.755.95-.926 1.15-.17.2-.34.225-.64.075-.3-.15-1.265-.467-2.41-1.487-.89-.794-1.49-1.775-1.665-2.075-.175-.3-.018-.462.13-.61.137-.135.3-.35.45-.525.15-.175.2-.3.3-.5s.05-.375-.025-.525C9.9 8.925 9.3 7.46 9.05 6.86c-.243-.586-.497-.58-.68-.59-.175-.01-.375-.01-.575-.01-.2 0-.525.075-.8 3.75-.275.3-.575.6-.975 1.05-.4.45-.725.925-.925 1.225-.2.3-.225.525-.075.675.15.15.3.35.45.525.15.175.2.3.3.5.1.2.05.375-.025.525-.075-.15-.675-1.615-.925-2.215-.24-.58-.5-.58-.68-.58h-.575c-.2 0-.525.075-.8.375-.275.3-1.05 1.025-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.11 3.22 5.11 4.52.714.31 1.27.495 1.7.63.717.227 1.37.195 1.885.118.57-.085 1.783-.73 2.033-1.433.25-.7.25-1.3.175-1.433-.075-.133-.275-.213-.575-.363z"/>
+                    <path d="M12.031 2c-5.514 0-9.969 4.456-9.969 9.971 0 1.761.459 3.479 1.332 5.008L2 22l5.176-1.332a9.89 9.89 0 004.855 1.27c5.514 0 9.969-4.456 9.969-9.971C22 6.456 17.545 2 12.031 2zm6.262 14.382c-.272.766-1.584 1.393-2.176 1.488-.512.082-1.182.148-3.328-.718-2.748-1.11-4.516-3.896-4.654-4.082-.137-.187-1.118-1.487-1.118-2.839 0-1.352.709-2.014.96-2.28.251-.266.551-.333.734-.333.183 0 .366.002.522.01.161.008.38.006.59.508.22.527.751 1.83.817 1.963.066.133.11.288.022.464-.088.176-.132.288-.264.443-.132.155-.275.347-.393.466-.132.133-.27.279-.116.544.154.266.685 1.13 1.472 1.83.844.751 1.554.983 1.78.983.226 0 .43-.221.583-.398.188-.22.428-.482.68-.838.196-.272.404-.22.684-.117.28.102 1.776.837 2.084.992.308.156.514.23.59.356.076.127.076.732-.196 1.498z"/>
                 </svg>
                 Chat with Us
             </a>
@@ -130,8 +131,8 @@ function injectFooter() {
                     <a aria-label="LinkedIn" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/70 hover:bg-white hover:text-[#00112c] transition-all" href="https://www.linkedin.com/in/darshan-industries-845427413/" target="_blank">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                     </a>
-                    <a aria-label="Twitter" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/70 hover:bg-white hover:text-[#00112c] transition-all" href="https://x.com/Darshan090803" target="_blank">
-                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.48.75 2.78 1.89 3.54-.7 0-1.36-.22-1.94-.53v.05c0 2.07 1.47 3.8 3.42 4.19-.36.1-.74.15-1.13.15-.28 0-.55-.03-.81-.08.54 1.68 2.11 2.9 3.96 2.94-1.44 1.13-3.26 1.81-5.23 1.81-.34 0-.67-.02-1-.06 1.88 1.2 4.11 1.9 6.5 1.9 7.8 0 12.07-6.46 12.07-12.07 0-.18 0-.37-.01-.55.83-.59 1.54-1.33 2.11-2.17z"></path></svg>
+                    <a aria-label="X" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/70 hover:bg-white hover:text-[#00112c] transition-all" href="https://x.com/Darshan090803" target="_blank">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                     </a>
                     <a aria-label="Instagram" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/70 hover:bg-white hover:text-[#00112c] transition-all" href="https://www.instagram.com/darshanindustries_pvt_ltd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
@@ -171,23 +172,23 @@ function injectQuoteModal() {
           <form id="quote-request-form" class="space-y-4">
             <div>
               <label class="block text-xs font-semibold text-[#434750] uppercase tracking-wider mb-1">Full Name *</label>
-              <input required class="w-full bg-[#f4f3f7] border border-[#c4c6d0]/40 rounded-xl px-4 py-3 focus:outline-none focus:border-[#00112c] focus:bg-white transition-all text-sm" type="text" placeholder="John Doe" id="quote-name">
+              <input required name="name" class="w-full bg-[#f4f3f7] border border-[#c4c6d0]/40 rounded-xl px-4 py-3 focus:outline-none focus:border-[#00112c] focus:bg-white transition-all text-sm" type="text" placeholder="John Doe" id="quote-name">
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label class="block text-xs font-semibold text-[#434750] uppercase tracking-wider mb-1">Company *</label>
-                <input required class="w-full bg-[#f4f3f7] border border-[#c4c6d0]/40 rounded-xl px-4 py-3 focus:outline-none focus:border-[#00112c] focus:bg-white transition-all text-sm" type="text" placeholder="Enterprise Inc." id="quote-company">
+                <input required name="company" class="w-full bg-[#f4f3f7] border border-[#c4c6d0]/40 rounded-xl px-4 py-3 focus:outline-none focus:border-[#00112c] focus:bg-white transition-all text-sm" type="text" placeholder="Enterprise Inc." id="quote-company">
               </div>
               <div>
                 <label class="block text-xs font-semibold text-[#434750] uppercase tracking-wider mb-1">Email Address *</label>
-                <input required class="w-full bg-[#f4f3f7] border border-[#c4c6d0]/40 rounded-xl px-4 py-3 focus:outline-none focus:border-[#00112c] focus:bg-white transition-all text-sm" type="email" placeholder="john@company.com" id="quote-email">
+                <input required name="email" class="w-full bg-[#f4f3f7] border border-[#c4c6d0]/40 rounded-xl px-4 py-3 focus:outline-none focus:border-[#00112c] focus:bg-white transition-all text-sm" type="email" placeholder="john@company.com" id="quote-email">
               </div>
             </div>
             
             <div>
               <label class="block text-xs font-semibold text-[#434750] uppercase tracking-wider mb-1">Product Category *</label>
-              <select required class="w-full bg-[#f4f3f7] border border-[#c4c6d0]/40 rounded-xl px-4 py-3 focus:outline-none focus:border-[#00112c] focus:bg-white transition-all text-sm text-[#1a1b1f]" id="quote-category">
+              <select required name="category" class="w-full bg-[#f4f3f7] border border-[#c4c6d0]/40 rounded-xl px-4 py-3 focus:outline-none focus:border-[#00112c] focus:bg-white transition-all text-sm text-[#1a1b1f]" id="quote-category">
                 <option>Specialty Chemicals</option>
                 <option>Solvents & Acids</option>
                 <option>Pharma Intermediates</option>
@@ -198,7 +199,7 @@ function injectQuoteModal() {
             
             <div>
               <label class="block text-xs font-semibold text-[#434750] uppercase tracking-wider mb-1">Message Details *</label>
-              <textarea required rows="3" class="w-full bg-[#f4f3f7] border border-[#c4c6d0]/40 rounded-xl px-4 py-3 focus:outline-none focus:border-[#00112c] focus:bg-white transition-all text-sm resize-none" placeholder="Volume requirements, destination port..." id="quote-message"></textarea>
+              <textarea required name="message" rows="3" class="w-full bg-[#f4f3f7] border border-[#c4c6d0]/40 rounded-xl px-4 py-3 focus:outline-none focus:border-[#00112c] focus:bg-white transition-all text-sm resize-none" placeholder="Volume requirements, destination port..." id="quote-message"></textarea>
             </div>
             
             <button type="submit" class="w-full py-4 rounded-full bg-[#00112c] text-white text-sm font-semibold uppercase tracking-widest hover:bg-[#002552] transition-colors shadow-lg flex items-center justify-center gap-2">
@@ -243,17 +244,18 @@ function injectMobileMenu() {
           </div>
           <nav class="flex flex-col gap-6">
             <a class="text-lg font-semibold text-[#1a1b1f] hover:text-[#00112c] transition-colors border-b border-gray-100 pb-2" href="index.html">Home</a>
+            <a class="text-lg font-semibold text-[#1a1b1f] hover:text-[#00112c] transition-colors border-b border-gray-100 pb-2" href="about.html">About Us</a>
             <a class="text-lg font-semibold text-[#1a1b1f] hover:text-[#00112c] transition-colors border-b border-gray-100 pb-2" href="products.html">Product Catalog</a>
             <a class="text-lg font-semibold text-[#1a1b1f] hover:text-[#00112c] transition-colors border-b border-gray-100 pb-2" href="services.html">Services & Capabilities</a>
+            <a class="text-lg font-semibold text-[#1a1b1f] hover:text-[#00112c] transition-colors border-b border-gray-100 pb-2" href="industries.html">Industries We Serve</a>
             <a class="text-lg font-semibold text-[#1a1b1f] hover:text-[#00112c] transition-colors border-b border-gray-100 pb-2" href="supply-chain.html">Supply Chain Network</a>
             <a class="text-lg font-semibold text-[#1a1b1f] hover:text-[#00112c] transition-colors border-b border-gray-100 pb-2" href="quality.html">Quality & Compliance</a>
-            <a class="text-lg font-semibold text-[#1a1b1f] hover:text-[#00112c] transition-colors border-b border-gray-100 pb-2" href="about.html">About Us</a>
             <a class="text-lg font-semibold text-[#1a1b1f] hover:text-[#00112c] transition-colors border-b border-gray-100 pb-2" href="contact.html">Contact Us</a>
           </nav>
         </div>
         <div class="mt-8 space-y-3">
           <a href="https://wa.me/916351583442" target="_blank" class="w-full bg-[#25D366] hover:bg-[#20ba59] text-white py-4 rounded-full font-semibold uppercase tracking-widest transition-colors text-sm shadow-md flex items-center justify-center gap-2">
-            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.729-1.448L0 24zm6.59-4.846c1.666.988 3.311 1.485 5.35 1.486 5.568 0 10.1-4.52 10.104-10.082.002-2.694-1.043-5.228-2.946-7.133C17.202 1.52 14.685.474 12.002.474c-5.572 0-10.105 4.52-10.109 10.083-.002 2.057.537 4.061 1.558 5.82L2.43 21.6l5.217-1.368zM17.486 14.4c-.3-.15-1.782-.88-2.05-.98-.268-.1-.463-.15-.658.15-.195.3-.755.95-.926 1.15-.17.2-.34.225-.64.075-.3-.15-1.265-.467-2.41-1.487-.89-.794-1.49-1.775-1.665-2.075-.175-.3-.018-.462.13-.61.137-.135.3-.35.45-.525.15-.175.2-.3.3-.5s.05-.375-.025-.525C9.9 8.925 9.3 7.46 9.05 6.86c-.243-.586-.497-.58-.68-.59-.175-.01-.375-.01-.575-.01-.2 0-.525.075-.8 3.75-.275.3-.575.6-.975 1.05-.4.45-.725.925-.925 1.225-.2.3-.225.525-.075.675.15.15.3.35.45.525.15.175.2.3.3.5.1.2.05.375-.025.525-.075-.15-.675-1.615-.925-2.215-.24-.58-.5-.58-.68-.58h-.575c-.2 0-.525.075-.8.375-.275.3-1.05 1.025-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.11 3.22 5.11 4.52.714.31 1.27.495 1.7.63.717.227 1.37.195 1.885.118.57-.085 1.783-.73 2.033-1.433.25-.7.25-1.3.175-1.433-.075-.133-.275-.213-.575-.363z"/></svg>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 2c-5.514 0-9.969 4.456-9.969 9.971 0 1.761.459 3.479 1.332 5.008L2 22l5.176-1.332a9.89 9.89 0 004.855 1.27c5.514 0 9.969-4.456 9.969-9.971C22 6.456 17.545 2 12.031 2zm6.262 14.382c-.272.766-1.584 1.393-2.176 1.488-.512.082-1.182.148-3.328-.718-2.748-1.11-4.516-3.896-4.654-4.082-.137-.187-1.118-1.487-1.118-2.839 0-1.352.709-2.014.96-2.28.251-.266.551-.333.734-.333.183 0 .366.002.522.01.161.008.38.006.59.508.22.527.751 1.83.817 1.963.066.133.11.288.022.464-.088.176-.132.288-.264.443-.132.155-.275.347-.393.466-.132.133-.27.279-.116.544.154.266.685 1.13 1.472 1.83.844.751 1.554.983 1.78.983.226 0 .43-.221.583-.398.188-.22.428-.482.68-.838.196-.272.404-.22.684-.117.28.102 1.776.837 2.084.992.308.156.514.23.59.356.076.127.076.732-.196 1.498z"/></svg>
             Chat with Us
           </a>
           <button id="mobile-quote-btn" class="w-full bg-[#00112c] text-white py-4 rounded-full font-semibold uppercase tracking-widest hover:bg-[#002552] transition-colors text-sm shadow-md">
@@ -331,15 +333,48 @@ function initInteractions() {
         const originalText = submitBtn.innerHTML;
         submitBtn.disabled = true;
         submitBtn.innerHTML = 'Submitting...';
+
+        const formData = new FormData(form);
+        const payload = Object.fromEntries(formData);
         
-        setTimeout(() => {
+        fetch('/api/submit-form', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+        })
+        .then(async (response) => {
+            if (response.status === 404) {
+                throw new Error('Endpoint not found (404)');
+            }
+            const data = await response.json();
+            if (response.ok && data.success) {
+                // Production success
+                formContent.classList.add('hidden');
+                successContent.classList.remove('hidden');
+                form.reset();
+            } else {
+                alert(data.message || 'Failed to submit quote request. Please try again.');
+            }
+        })
+        .catch((error) => {
+            console.warn('Backend API not detected. Falling back to Demo Mode Simulation.', error);
+            // Run Demo simulation fallback
+            setTimeout(() => {
+                const descParagraph = successContent.querySelector('p');
+                if (descParagraph && !descParagraph.innerHTML.includes('[Demo Mode]')) {
+                    descParagraph.innerHTML = '<strong>[Demo Mode]</strong> ' + descParagraph.innerHTML;
+                }
+                formContent.classList.add('hidden');
+                successContent.classList.remove('hidden');
+                form.reset();
+            }, 1200);
+        })
+        .then(() => {
             submitBtn.disabled = false;
             submitBtn.innerHTML = originalText;
-            
-            // Switch to success view
-            formContent.classList.add('hidden');
-            successContent.classList.remove('hidden');
-        }, 1200);
+        });
     });
     
     // Mobile menu toggle logic
