@@ -59,7 +59,7 @@ function injectHeader() {
             <a class="font-body-md text-sm text-[#434750] hover:text-[#00112c] transition-colors" href="about.html">About</a>
             <a class="font-body-md text-sm text-[#434750] hover:text-[#00112c] transition-colors" href="products.html">Products</a>
             <a class="font-body-md text-sm text-[#434750] hover:text-[#00112c] transition-colors" href="services.html">Services</a>
-            <a class="font-body-md text-sm text-[#434750] hover:text-[#00112c] transition-colors" href="industries.html">Industries</a>
+            <!-- <a class="font-body-md text-sm text-[#434750] hover:text-[#00112c] transition-colors" href="industries.html">Industries</a> -->
             <a class="font-body-md text-sm text-[#434750] hover:text-[#00112c] transition-colors" href="supply-chain.html">Network</a>
             <a class="font-body-md text-sm text-[#434750] hover:text-[#00112c] transition-colors" href="quality.html">Quality</a>
             <a class="font-body-md text-sm text-[#434750] hover:text-[#00112c] transition-colors" href="contact.html">Contact</a>
@@ -247,7 +247,7 @@ function injectMobileMenu() {
             <a class="text-lg font-semibold text-[#1a1b1f] hover:text-[#00112c] transition-colors border-b border-gray-100 pb-2" href="about.html">About Us</a>
             <a class="text-lg font-semibold text-[#1a1b1f] hover:text-[#00112c] transition-colors border-b border-gray-100 pb-2" href="products.html">Product Catalog</a>
             <a class="text-lg font-semibold text-[#1a1b1f] hover:text-[#00112c] transition-colors border-b border-gray-100 pb-2" href="services.html">Services & Capabilities</a>
-            <a class="text-lg font-semibold text-[#1a1b1f] hover:text-[#00112c] transition-colors border-b border-gray-100 pb-2" href="industries.html">Industries We Serve</a>
+            <!-- <a class="text-lg font-semibold text-[#1a1b1f] hover:text-[#00112c] transition-colors border-b border-gray-100 pb-2" href="industries.html">Industries We Serve</a> -->
             <a class="text-lg font-semibold text-[#1a1b1f] hover:text-[#00112c] transition-colors border-b border-gray-100 pb-2" href="supply-chain.html">Supply Chain Network</a>
             <a class="text-lg font-semibold text-[#1a1b1f] hover:text-[#00112c] transition-colors border-b border-gray-100 pb-2" href="quality.html">Quality & Compliance</a>
             <a class="text-lg font-semibold text-[#1a1b1f] hover:text-[#00112c] transition-colors border-b border-gray-100 pb-2" href="contact.html">Contact Us</a>
@@ -291,25 +291,35 @@ function initInteractions() {
         modalOverlay.classList.remove('active');
     }
     
-    // Wire up all "Request Quote", "Get Quote", "Get in Touch", "Submit Inquiry", or "Consultation" buttons
+    // Wire up all "Request Quote", "Get Quote", "Get in Touch", "Submit Inquiry" buttons (ignoring consultation / contact links)
     document.body.addEventListener('click', (e) => {
         const target = e.target.closest('button, a');
         if (!target) return;
         
+        // If it's a link to contact page or a phone link, let it handle natively
+        if (target.tagName === 'A') {
+            const href = target.getAttribute('href') || '';
+            if (href.includes('contact.html') || href.startsWith('tel:') || href.startsWith('mailto:')) {
+                return;
+            }
+        }
+        
         const text = target.textContent.trim().toLowerCase();
+        // Ignore any text with the word "consultation" or containing dial instructions
+        if (text.includes('consultation') || text.includes('procurement team')) {
+            return;
+        }
+        
         if (
             text.includes('request quote') || 
             text.includes('get quote') || 
             text.includes('get in touch') || 
-            text.includes('submit inquiry') || 
-            text.includes('request consultation') || 
-            text.includes('schedule a consultation') || 
             target.id === 'mobile-quote-btn'
         ) {
             e.preventDefault();
-            // Close mobile menu if open
             closeMobileMenu();
-            openModal();
+            window.location.href = 'contact.html';
+            return;
         }
     });
     
@@ -417,7 +427,28 @@ function initInteractions() {
 // Function to initialize scroll reveals and animations
 function initAnimations() {
     // Scroll reveal effects
-    const revealElements = document.querySelectorAll('.glass-card, .glass-panel, .grid > div, section p, section h2');
+    // Filter out elements in the hero / first section of the page to prevent LCP/FCP delays
+    const revealElements = Array.from(document.querySelectorAll('.glass-card, .glass-panel, .grid > div, section p, section h2'))
+        .filter(el => {
+            const section = el.closest('section');
+            if (!section) return true;
+            
+            // Skip first section in main
+            const main = document.querySelector('main');
+            if (main) {
+                const firstSection = main.querySelector('section');
+                if (firstSection === section) {
+                    return false;
+                }
+            }
+            
+            // Skip sections with h1 (heroes)
+            if (section.querySelector('h1')) {
+                return false;
+            }
+            
+            return true;
+        });
     
     const observerOptions = {
         threshold: 0.05,
