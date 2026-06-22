@@ -38,9 +38,12 @@
 
     <!-- Main Content -->
     <main class="pt-[56px]">
-        <section class="relative h-[calc(100vh-56px)] min-h-[500px] flex items-center overflow-hidden" style="background-image: linear-gradient(to bottom, rgba(0, 17, 44, 0.85), rgba(0, 17, 44, 0.4)), url('banner_shipping.png'); background-size: cover; background-position: center;">
-            <!-- Dark Overlay for better text readability -->
-            <div class="absolute inset-0 bg-[#00112c]/20 mix-blend-multiply pointer-events-none"></div>
+        <section class="relative h-[calc(100vh-56px)] min-h-[500px] flex items-center overflow-hidden">
+            <!-- Cinematic Background Image with fetchpriority=high -->
+            <div class="absolute inset-0 -z-10">
+                <img alt="Global Sourcing and Logistics" fetchpriority="high" class="w-full h-full object-cover" src="banner_shipping.png">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#00112c]/85 to-[#00112c]/40 mix-blend-multiply"></div>
+            </div>
             <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full relative z-10">
                 <div class="max-w-3xl">
                     <span class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-md border border-white/20 rounded-full shadow-sm w-fit mb-6">

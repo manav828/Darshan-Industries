@@ -133,28 +133,28 @@
                     <div class="absolute -inset-4 bg-mesh-blue-tint blur-[100px] rounded-full opacity-50 pointer-events-none"></div>
                     <div class="relative bg-white/70 backdrop-blur-xl border border-glass-border/60 rounded-[2rem] p-8 md:p-12 ambient-shadow">
                         <form id="contact-inquiry-form" class="space-y-6">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div class="space-y-2">
-                                    <label class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Full Name *</label>
-                                    <input name="name" required class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="John Doe" type="text">
+                                    <label for="contact-name" class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Full Name *</label>
+                                    <input id="contact-name" name="name" required class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="John Doe" type="text">
                                 </div>
                                 <div class="space-y-2">
-                                    <label class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Company Name *</label>
-                                    <input name="company" required class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="Enterprise Inc." type="text">
+                                    <label for="contact-company" class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Company Name *</label>
+                                    <input id="contact-company" name="company" required class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="Enterprise Inc." type="text">
                                 </div>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div class="space-y-2">
-                                    <label class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Email Address *</label>
-                                    <input name="email" required class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="john@enterprise.com" type="email">
+                                    <label for="contact-email" class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Email Address *</label>
+                                    <input id="contact-email" name="email" required class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="john@enterprise.com" type="email">
                                 </div>
                                 <div class="space-y-2">
-                                    <label class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Phone Number</label>
-                                    <input name="phone" class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="+1 (555) 000-0000" type="tel">
+                                    <label for="contact-phone" class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Phone Number</label>
+                                    <input id="contact-phone" name="phone" class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="+1 (555) 000-0000" type="tel">
                                 </div>
                             </div>
                             <div class="space-y-2">
-                                <label class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Inquiry Type *</label>
+                                <label for="contact-inquiry-type" class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Inquiry Type *</label>
                                 <select name="inquiry_type" id="contact-inquiry-type" required class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-on-surface text-sm">
                                     <option>Product Inquiry (Bulk Supply)</option>
                                     <option>Strategic Partnership</option>
@@ -167,17 +167,17 @@
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div class="space-y-2">
-                                    <label class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Specific Product (Optional)</label>
+                                    <label for="contact-specific-product" class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Specific Product (Optional)</label>
                                     <input name="specific_product" id="contact-specific-product" class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="e.g., Acetone, Morpholine" type="text">
                                 </div>
                                 <div class="space-y-2">
-                                    <label class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Quantity (Optional)</label>
+                                    <label for="contact-quantity" class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Quantity (Optional)</label>
                                     <input name="quantity" id="contact-quantity" class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors text-sm" placeholder="e.g., 500 kg, 10 MT" type="text">
                                 </div>
                             </div>
                             <div class="space-y-2">
-                                <label class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Message Details *</label>
-                                <textarea name="message" required class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors resize-none text-sm" placeholder="Please specify volume requirements, technical specifications, or destination port..." rows="4"></textarea>
+                                <label for="contact-message" class="font-label-md text-label-md text-on-surface-variant text-xs uppercase tracking-wider">Message Details *</label>
+                                <textarea id="contact-message" name="message" required class="w-full bg-surface-container-low border-b-2 border-transparent border-b-surface-dim focus:border-b-primary focus:ring-0 px-4 py-3 rounded-t-lg transition-colors resize-none text-sm" placeholder="Please specify volume requirements, technical specifications, or destination port..." rows="4"></textarea>
                             </div>
                             
                             <div id="form-result-message" class="hidden py-3 text-center text-sm font-semibold rounded-lg"></div>

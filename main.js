@@ -171,23 +171,23 @@ function injectQuoteModal() {
           
           <form id="quote-request-form" class="space-y-4">
             <div>
-              <label class="block text-xs font-semibold text-[#434750] uppercase tracking-wider mb-1">Full Name *</label>
+              <label for="quote-name" class="block text-xs font-semibold text-[#434750] uppercase tracking-wider mb-1">Full Name *</label>
               <input required name="name" class="w-full bg-[#f4f3f7] border border-[#c4c6d0]/40 rounded-xl px-4 py-3 focus:outline-none focus:border-[#00112c] focus:bg-white transition-all text-sm" type="text" placeholder="John Doe" id="quote-name">
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label class="block text-xs font-semibold text-[#434750] uppercase tracking-wider mb-1">Company *</label>
+                <label for="quote-company" class="block text-xs font-semibold text-[#434750] uppercase tracking-wider mb-1">Company *</label>
                 <input required name="company" class="w-full bg-[#f4f3f7] border border-[#c4c6d0]/40 rounded-xl px-4 py-3 focus:outline-none focus:border-[#00112c] focus:bg-white transition-all text-sm" type="text" placeholder="Enterprise Inc." id="quote-company">
               </div>
               <div>
-                <label class="block text-xs font-semibold text-[#434750] uppercase tracking-wider mb-1">Email Address *</label>
+                <label for="quote-email" class="block text-xs font-semibold text-[#434750] uppercase tracking-wider mb-1">Email Address *</label>
                 <input required name="email" class="w-full bg-[#f4f3f7] border border-[#c4c6d0]/40 rounded-xl px-4 py-3 focus:outline-none focus:border-[#00112c] focus:bg-white transition-all text-sm" type="email" placeholder="john@company.com" id="quote-email">
               </div>
             </div>
             
             <div>
-              <label class="block text-xs font-semibold text-[#434750] uppercase tracking-wider mb-1">Product Category *</label>
+              <label for="quote-category" class="block text-xs font-semibold text-[#434750] uppercase tracking-wider mb-1">Product Category *</label>
               <select required name="category" class="w-full bg-[#f4f3f7] border border-[#c4c6d0]/40 rounded-xl px-4 py-3 focus:outline-none focus:border-[#00112c] focus:bg-white transition-all text-sm text-[#1a1b1f]" id="quote-category">
                 <option>Specialty Chemicals</option>
                 <option>Solvents & Acids</option>
@@ -198,7 +198,7 @@ function injectQuoteModal() {
             </div>
             
             <div>
-              <label class="block text-xs font-semibold text-[#434750] uppercase tracking-wider mb-1">Message Details *</label>
+              <label for="quote-message" class="block text-xs font-semibold text-[#434750] uppercase tracking-wider mb-1">Message Details *</label>
               <textarea required name="message" rows="3" class="w-full bg-[#f4f3f7] border border-[#c4c6d0]/40 rounded-xl px-4 py-3 focus:outline-none focus:border-[#00112c] focus:bg-white transition-all text-sm resize-none" placeholder="Volume requirements, destination port..." id="quote-message"></textarea>
             </div>
             
