@@ -117,6 +117,8 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.4s ease, backdrop-filter 0.4s ease;
+    overflow-y: auto; /* Ensures scrollability on mobile */
+    padding: 1rem;
 }
 
 .modal-overlay.active {
@@ -127,8 +129,43 @@
 .modal-container {
     transform: translateY(40px) scale(0.95);
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    max-height: calc(100vh - 2rem); /* Prevent modal overflow */
+    overflow-y: auto; /* Scroll content if needed */
 }
 
 .modal-overlay.active .modal-container {
     transform: translateY(0) scale(1);
 }
+
+/* Global Responsiveness & Mobile Overrides */
+@media (max-width: 768px) {
+    /* Container Padding Collapsing */
+    .px-margin-desktop {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    
+    /* Typography Responsive Scaling */
+    .text-display-lg {
+        font-size: 36px !important;
+        line-height: 44px !important;
+    }
+    .text-headline-xl {
+        font-size: 28px !important;
+        line-height: 36px !important;
+    }
+    .text-headline-lg {
+        font-size: 22px !important;
+        line-height: 28px !important;
+    }
+    .text-body-lg {
+        font-size: 15px !important;
+        line-height: 22px !important;
+    }
+    
+    /* Stats and generic grid padding tweaks */
+    .p-8, .p-10, .p-12 {
+        padding: 1.5rem !important; /* Scale down padding inside cards to 24px */
+    }
+}
+
